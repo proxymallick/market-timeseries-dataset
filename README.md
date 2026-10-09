@@ -4,6 +4,8 @@
 
 Private review hosting has subsequently been authorized: see [private repository and Drive dataset locations](docs/private_hosting.md). Public release and DOI registration remain pending.
 
+Repository usage is documented in the [analytics summary](metrics/README.md), [traffic history](metrics/metrics_log.csv) and [analytics definitions/access notes](docs/github_analytics.md). GitHub currently disables Traffic Insights for this private repository's account plan; unavailable visitors are not reported as zero.
+
 [![Downloads: not published](https://img.shields.io/badge/downloads-not%20published-lightgrey)](hosting/downloads_badge.json)
 [![Stars: not published](https://img.shields.io/badge/stars-not%20published-lightgrey)](docs/hosting_and_metrics.md)
 

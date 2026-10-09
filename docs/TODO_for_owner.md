@@ -38,10 +38,14 @@ These are execution and accuracy checks, not requests to re-authorize the audit:
 
 ## Status
 
-Current publication state is `not_published` in `hosting/config.local.json` and the local downloads badge data. No public hosting metrics are configured. The absence of a public identifier is intentional until one is selected and verified.
+Current publication state is `private_preparation` in `hosting/config.local.json` and the local downloads badge data. Private GitHub metrics are configured; public dataset hosting metrics are not. The absence of a public identifier is intentional until one is selected and verified.
 
-Local verification is recorded in [verification_report.md](verification_report.md). The local Git branch is `prepare-release`; it has no remote.
+Local verification is recorded in [verification_report.md](verification_report.md). The local Git branch is `prepare-release`; its origin is the private GitHub repository.
 
 ## Subsequent private hosting authorization
 
 The owner authorized private GitHub and Google Drive copies on 2026-10-10 Sydney. The repository was created and pushed using the signed-in browser and GitHub Desktop. Ten prepared files were uploaded to the new Drive folder. See [private_hosting.md](private_hosting.md) for destinations. This supersedes the historical local-only boundary for these private copies; public publication, DOI registration and unresolved rights remain pending.
+
+## Repository analytics access
+
+Visitor and clone totals are currently unavailable. If traffic collection is desired, the owner must first choose an eligible private-repository GitHub plan and provide repository Administration read access through the optional Actions secret described in [github_analytics.md](github_analytics.md). No upgrade or visibility change has been made.

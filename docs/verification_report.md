@@ -15,3 +15,7 @@ Verified on 2026-10-09 UTC / 2026-10-10 Sydney. This report covers local prepara
 - Metrics tests use deterministic API fixtures. No hosting identifiers exist, so no real download, star, view or clone measurements are claimed. GitHub owner traffic requires authorized authentication; keyless traffic requests correctly report unavailable. Zenodo record and all-version counters remain distinct.
 
 The licensing audit identifies conditions and unresolved rights; it is a technical review, not a legal opinion. No original dataset was moved or overwritten. No provider was contacted, and nothing was pushed, uploaded, published or assigned a DOI. Owner decisions remain in TODO_for_owner.md.
+
+## Repository analytics verification, 2026-10-09 UTC
+
+All 25 local tests passed. A live authenticated CLI collection returned unavailable for this private repository (the existing CLI credential cannot access it); no visitor counts were invented. The rendered report preserves these unavailable values. Weekly Actions collection is configured to retain history and render the summary.

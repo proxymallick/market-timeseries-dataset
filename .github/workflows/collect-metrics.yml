@@ -1,4 +1,4 @@
-name: Collect public metrics
+name: Collect repository analytics
 
 on:
   schedule:
@@ -17,16 +17,21 @@ jobs:
         with:
           python-version: "3.x"
       - name: Collect metrics
-        run: python scripts/collect_metrics.py
+        env:
+          GH_TOKEN: ${{ secrets.REPO_ANALYTICS_TOKEN || github.token }}
+        run: python scripts/collect_metrics.py --github-auth
+      - name: Render analytics summary
+        if: always()
+        run: python scripts/render_analytics.py
       - name: Commit metrics history
         if: always()
         run: |
-          if git diff --quiet -- metrics/metrics_log.csv; then
+          if git diff --quiet -- metrics/metrics_log.csv metrics/README.md; then
             echo "No metric changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add metrics/metrics_log.csv
-          git commit -m "Update hosting metrics"
+          git add metrics/metrics_log.csv metrics/README.md
+          git commit -m "Update repository analytics"
           git push

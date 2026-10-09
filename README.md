@@ -2,6 +2,8 @@
 
 **Local release preparation, version 0.1.0-local. Not published.** This repository contains a small, documented selection of public-source and derived market and macro-financial tables prepared for research and reproducible analysis. It is not a mirror of every dataset found in the source workspace. The preparation manifest contains 54 data files (106,875,828 bytes, about 106.9 MB); original datasets were not moved or modified.
 
+Private review hosting has subsequently been authorized: see [private repository and Drive dataset locations](docs/private_hosting.md). Public release and DOI registration remain pending.
+
 [![Downloads: not published](https://img.shields.io/badge/downloads-not%20published-lightgrey)](hosting/downloads_badge.json)
 [![Stars: not published](https://img.shields.io/badge/stars-not%20published-lightgrey)](docs/hosting_and_metrics.md)
 

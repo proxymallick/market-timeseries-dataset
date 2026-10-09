@@ -1,0 +1,50 @@
+[
+  {
+    "dataset_id": "economic_events",
+    "archive": "economic_events-0.1.0-private.zip",
+    "bytes": 723729,
+    "sha256": "50a030e7d58d998e9e55f6166b15f666f499ba8dab38452c598fd086c2d4f992",
+    "payload_files": 48,
+    "rows": 2465
+  },
+  {
+    "dataset_id": "economic_events_review",
+    "archive": "economic_events_review-0.1.0-private.zip",
+    "bytes": 564793,
+    "sha256": "dde47bdcd23b598010566a4b3f59b2582071a8fa38a238f341df8f75a696cdbc",
+    "payload_files": 1,
+    "rows": 4219
+  },
+  {
+    "dataset_id": "hyperliquid_hourly",
+    "archive": "hyperliquid_hourly-0.1.0-private.zip",
+    "bytes": 195920,
+    "sha256": "b83d4448933ea28379d344f97a66137e47ce56f1d7e90c2e04753497664c3513",
+    "payload_files": 1,
+    "rows": 2233
+  },
+  {
+    "dataset_id": "cftc_tff",
+    "archive": "cftc_tff-0.1.0-private.zip",
+    "bytes": 401504,
+    "sha256": "700b3298c1309b42fff837b4dbb8b81b2eec81f289cc8d04902aff4b10c27300",
+    "payload_files": 1,
+    "rows": 4084
+  },
+  {
+    "dataset_id": "rba_f2",
+    "archive": "rba_f2-0.1.0-private.zip",
+    "bytes": 188520,
+    "sha256": "514e51a8cc6afd959b38cb5be6bbd66634c9ab2aa4b22572dab3c026d39f0bd2",
+    "payload_files": 1,
+    "rows": 3196
+  },
+  {
+    "dataset_id": "cftc_disaggregated",
+    "archive": "cftc_disaggregated-0.1.0-private.zip",
+    "bytes": 29879578,
+    "sha256": "a670763c09b3c5abd0fefe20d7290ee2abc4794fd72de79ebdbf8018c4ff7415",
+    "payload_files": 2,
+    "rows": 83019
+  }
+]

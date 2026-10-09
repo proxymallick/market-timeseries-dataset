@@ -116,14 +116,14 @@ These comparisons concern original project material only. They do not decide whe
 
 ## Status and planned layout
 
-This work was prepared locally on 2026-10-09. It has not been published, pushed, uploaded, or assigned an identifier. A 32,653-file local restricted copy is under `data_restricted/`, totaling 237,154,298,717 logical bytes. These are independent APFS copy-on-write clones, not hardlinks; their initial physical allocation was metadata-only, so the logical-byte total does not mean an additional 237 GB of content blocks. Restricted holdings are not part of this proposed public table selection. No original source holdings were modified.
+This work was prepared locally on 2026-10-09. It remains unpublished to the public and has no DOI. The owner subsequently authorized the private repository push and Drive copies described in [private_hosting.md](docs/private_hosting.md). A 32,653-file local restricted copy is under `data_restricted/`, totaling 237,154,298,717 logical bytes. These are independent APFS copy-on-write clones, not hardlinks; their initial physical allocation was metadata-only, so the logical-byte total does not mean an additional 237 GB of content blocks. Restricted holdings are not part of this proposed public table selection. No original source holdings were modified.
 
 ```text
 data/       selected, manifest-listed table products only
 docs/       schemas, inventories, statistics, rights audit, manifests, guidance
 LICENSES/   locally retained source-policy evidence; upstream terms remain controlling
-metrics/    reserved; no repository/hosting identifiers configured
-paper/      reserved; no public claims or benchmark results
+metrics/    tested collection tooling; no public metric sources configured
+paper/      compiled dataset-only draft; no benchmark results
 scripts/    local preparation and validation utilities
 tests/      local checks
 ```

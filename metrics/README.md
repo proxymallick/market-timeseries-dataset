@@ -1,7 +1,7 @@
 # Repository analytics
 
 Repository: [proxymallick/market-timeseries-dataset](https://github.com/proxymallick/market-timeseries-dataset)
-Latest collection attempt: 2026-10-09T13:36:14.703287Z
+Latest collection attempt: 2026-10-09T13:37:32.342141Z
 
 | Metric | Latest result |
 |---|---:|
@@ -9,9 +9,9 @@ Latest collection attempt: 2026-10-09T13:36:14.703287Z
 | Page views (14 days) | Unavailable |
 | Unique cloners (14 days) | Unavailable |
 | Full clones (14 days) | Unavailable |
-| Stars | Unavailable |
-| Forks | Unavailable |
-| Watch subscriptions | Unavailable |
+| Stars | 0 |
+| Forks | 0 |
+| Watch subscriptions | 0 |
 
 [Live GitHub Traffic Insights](https://github.com/proxymallick/market-timeseries-dataset/graphs/traffic) · [CSV history](metrics_log.csv) · [Definitions and access limits](../docs/github_analytics.md)
 

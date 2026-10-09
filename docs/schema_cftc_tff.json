@@ -1,0 +1,105 @@
+{
+  "format": "Parquet",
+  "fields": [
+    {
+      "name": "instrument",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "market_code",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "market_name",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "observation_timestamp",
+      "arrow_type": "timestamp[ns, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "available_timestamp",
+      "arrow_type": "timestamp[ns, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "open_interest",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "dealer_long",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "dealer_short",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "dealer_spread",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "asset_manager_long",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "asset_manager_short",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "asset_manager_spread",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "leveraged_money_long",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "leveraged_money_short",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "leveraged_money_spread",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "other_reportable_long",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "other_reportable_short",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "other_reportable_spread",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "nonreportable_long",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "nonreportable_short",
+      "arrow_type": "double",
+      "nullable": true
+    }
+  ]
+}

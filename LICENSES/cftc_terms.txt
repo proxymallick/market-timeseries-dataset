@@ -1,0 +1,137 @@
+Official source: https://accountcreation.cftc.gov/TermsOfUseAgreement.aspx
+Accessed: 2026-10-09T12:36:48Z
+Capture: cftc_terms.html
+
+Terms of Use Agreement - CFTC
+Font Size:
+A
+A
+A
+//
+Print
+//
+Bookmark
+Terms of Use Agreement
+For purposes of this Terms of Use Agreement and the Privacy Policy, the "FTP Portal"
+                                    refers to an electronic system operated by the Commodity Futures Trading Commission
+                                    (CFTC) as an interface between the CFTC and various individuals and entities submitting
+                                    information to the CFTC pursuant to the Commodity Exchange Act, 7 U.S.C. §§ 1, et
+                                    seq. The FTP Portal provides authorized users secure access to SFTP submission systems.
+The following are terms of a legal agreement between you and the CFTC. By accessing,
+                                    browsing, or using this website, you acknowledge that you have read, understood,
+                                    and agree to be bound by these terms and to comply with all applicable laws and
+                                    regulations.
+Disclaimer of Warranty
+Use of this site is at your sole risk. All materials, information, products, software,
+                                    programs, and services are provided "as is," with no warranties or guarantees whatsoever.
+                                    The CFTC expressly disclaims to the fullest extent permitted by law all express,
+                                    implied, statutory, and other warranties, guarantees, or representations, including,
+                                    without limitation, the warranties of merchantability, fitness for a particular
+                                    purpose, and non-infringement of proprietary and intellectual property rights. Without
+                                    limitation, the CFTC makes no warranty or guarantee that this website will be uninterrupted,
+                                    timely, secure, or error-free.
+You understand and agree that if you download or otherwise obtain materials, information,
+                                    products, software, programs, or services by using this site, you do so at your
+                                    own discretion and risk and that you will be solely responsible for any damages
+                                    that may result, including loss of data or damage to your computer system.
+Limitation of Liability
+In no event will the CFTC be liable to any party for any direct, indirect, incidental,
+                                    special, exemplary or consequential damages of any type whatsoever related to or
+                                    arising from this web site or any use of this web site, or of any site or resource
+                                    linked to, referenced, or accessed through this web site, or for the use or downloading
+                                    of, or access to, any materials, information, products, or services, including,
+                                    without limitation, loss of goodwill, any lost profits, business interruption, lost
+                                    savings or loss of programs or other data or any other intangible loss, even if
+                                    the CFTC is expressly advised of the possibility of such damages. This exclusion
+                                    and waiver of liability applies to all causes of action, whether based on contract,
+                                    warranty, tort, or any other legal theories.
+Exclusions and Limitations
+Some jurisdictions do not allow the exclusion of certain warranties or the limitation
+                                    or exclusion of liability for certain damages. Accordingly, some of the above disclaimers
+                                    and limitations of liability may not apply to you. To the extent that the CFTC may
+                                    not disclaim any implied warranty or limits its liability, as a matter of applicable
+                                    law, the scope and duration of such warranty and the extent of the CFTC's liability
+                                    shall be the minimum permitted under such applicable law.
+Security
+The CFTC uses software programs to monitor this website for security purposes to
+                                    ensure it remains available to all users and to protect information in the system.
+                                    By accessing this website, you are expressly consenting to these monitoring activities.
+                                    Unauthorized attempts to defeat or circumvent security features; to use the system
+                                    for other than intended purposes; to deny service to authorized users; to access,
+                                    obtain, alter, damage, or to destroy information; or otherwise to interfere with
+                                    the system or its operation are prohibited. Evidence of such acts may be disclosed
+                                    to law enforcement authorities and result in criminal prosecution under the Computer
+                                    Fraud and Abuse Act of 1986 and the National Information Infrastructure Protection
+                                    Act of 1996, 18 U.S.C. § 1030, or other applicable criminal laws.
+No Uploading Malicious Code
+You are responsible for taking all precautions necessary to ensure that anything
+                                    you obtain from or provide to the CFTC FTP Portal is free of viruses, Trojan horses,
+                                    worms, malware, and any other computer programming routines or engines that are
+                                    designed to or reasonably likely to damage, detrimentally interfere with, surreptitiously
+                                    intercept, or expropriate any system, data or information accessible through or
+                                    on the FTP Portal.
+Reproduction of CFTC Content
+Government information made available on the CFTC website is in the public domain.
+                                    Public domain information may be freely distributed and copied, but it is requested
+                                    that in any subsequent use the CFTC be given appropriate acknowledgement. When using
+                                    the CFTC website, you may encounter documents, illustrations, photographs, or other
+                                    information resources contributed or licensed by private individuals, companies,
+                                    or organizations that may be protected by U.S. and foreign copyright laws. Transmission
+                                    or reproduction of protected items beyond that allowed by fair use as defined in
+                                    the copyright laws requires the written permission of the copyright owners.
+CFTC Disclaimer of Endorsement
+Any reference obtained through the FTP Portal to a specific product, process, or service
+                                    does not constitute or imply an endorsement by the CFTC or the United States Government
+                                    of the product, process, or service, or its producer or provider. The views and
+                                    opinions expressed in any referenced document do not necessarily state or reflect
+                                    those of the CFTC staff, the Commission or the United States Government. The information
+                                    included on this webpage is for informational purposes only.
+Linking
+This site may contain links to Federal and non-Federal websites if we think they
+                                    may be useful to our visitors or necessary for the performance of agency functions.
+                                    The CFTC does not guarantee the accuracy or completeness of any information on these
+                                    sites. Be aware that the privacy protection provided to you on CFTC.gov may not
+                                    be available at the external link.
+Use of the CFTC Seal
+The CFTC seal is intended for the official use of the Commodity Futures Trading
+                                    Commission only. It is expressly excluded from use to imply endorsement of a commercial
+                                    product or service. The CFTC seal may not be used by anyone outside of the CFTC.
+Accessibility
+The CFTC is committed to making the information it delivers via the Internet accessible
+                                    to the widest possible audience, including those with disabilities. We make every
+                                    attempt to ensure that our website meets or exceeds the requirements of Section
+                                    508 of the Rehabilitation Act of 1973, as amended.
+Except for the Home Page, all pages on our website that contain our standard navigation
+                                    links include a skip navigation feature that allows those using a screen reader
+                                    to skip over repetitive navigation links. Using this skipping technique allows users
+                                    to move directly to the main content of the page.
+All graphics on our site include alt tags that enable a screen reader to access
+                                    a title or complete description of a graphic.
+Many documents on the CFTC website are in HTML or plain text (ASCII) formats, which
+                                    are usually accessible to screen-reading software. A large number of documents are
+                                    in portable document format (PDF) and are displayed through Adobe’s free Acrobat
+                                    Reader.
+Reading PDF Format Files with a Screen Reader
+PDF documents displayed through the Acrobat Reader may require additional steps
+                                    to become accessible to screen readers. PDF documents found on this site may be
+                                    accessible to some screen readers (except for some complex formatting such as graphics
+                                    and some tables). We follow software developments related to PDF accessibility and
+                                    will make all elements of PDF documents accessible to screen readers as soon as
+                                    possible.
+Modification of Terms & Severability
+The CFTC reserves the right to modify this Terms of Use Agreement and any other
+                                    policies governing the CFTC FTP Portal at any time, without notice. Modifications may
+                                    be posted here, and you are deemed to be aware of and bound by any changes. Should
+                                    any provision of this Terms of Use Agreement be held to be void, invalid, unenforceable,
+                                    or illegal by a proper legal authority, the validity and enforceability of the other
+                                    provisions shall not be affected.
+Denial of Access At Any Time
+CFTC reserves the right to terminate and block your access to the FTP Portal at any
+                                    time, in the CFTC’s sole discretion, with or without notice, and with or without
+                                    any liability.
+Account Management
+CFTC FTP Portal accounts expire after 90 days of inactivity. To prevent this from happening, log into your account at least once every 90 days months. Expired accounts must be reactivated by CFTC and may take up to two business days.
+Questions
+If you have any questions about these terms of use, please contact CFTC staff at
+[email protected]
+.

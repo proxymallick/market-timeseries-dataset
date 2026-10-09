@@ -1,0 +1,40 @@
+{
+  "markets": {
+    "physical_files": 29418,
+    "size_bytes": 236633734490,
+    "roles": {
+      "observations": 29343,
+      "instrument_metadata": 4,
+      "metadata_sidecar": 3,
+      "archive": 68
+    },
+    "unknown_row_counts": 186
+  },
+  "time series": {
+    "physical_files": 23920,
+    "size_bytes": 4824115618,
+    "roles": {
+      "analysis_or_model_artifact": 8845,
+      "packaged_copy_or_analysis": 15029,
+      "observations": 31,
+      "metadata_sidecar": 3,
+      "archive": 12
+    },
+    "unknown_row_counts": 54
+  },
+  "economic events": {
+    "physical_files": 3315,
+    "size_bytes": 426178473,
+    "roles": {
+      "analysis_or_model_artifact": 2,
+      "observations": 50,
+      "source_policy_document": 14,
+      "metadata_sidecar": 3,
+      "raw_source_document": 3197,
+      "superseded_unvalidated": 49
+    },
+    "unknown_row_counts": 3214
+  },
+  "duplicate_groups_verified": 1072,
+  "total_files": 56653
+}

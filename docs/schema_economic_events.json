@@ -1,0 +1,190 @@
+{
+  "format": "Parquet",
+  "fields": [
+    {
+      "name": "event_id",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "revision_id",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "event_timestamp_local",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "timezone",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "event_type",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "event_category",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "event_name",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "region",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "currency",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "reference_period",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "unit",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "actual_measure",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "value_evidence",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importance",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_name",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_url",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_sha256",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "confidence",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "timestamp_evidence",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "quality_status",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "event_timestamp_utc",
+      "arrow_type": "timestamp[us, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "available_timestamp",
+      "arrow_type": "timestamp[us, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "announced_at_utc",
+      "arrow_type": "timestamp[us, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "ingested_at_utc",
+      "arrow_type": "timestamp[us, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "actual_value",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "forecast_value",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "previous_value",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "revised_previous_value",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "surprise",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "surprise_normalised",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "event_date",
+      "arrow_type": "date32[day]",
+      "nullable": true
+    },
+    {
+      "name": "affected_asset_classes",
+      "arrow_type": "list<element: string>",
+      "nullable": true
+    },
+    {
+      "name": "is_scheduled",
+      "arrow_type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "source_priority",
+      "arrow_type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "is_revision",
+      "arrow_type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "year",
+      "arrow_type": "dictionary<values=int32, indices=int32, ordered=0>",
+      "nullable": true
+    },
+    {
+      "name": "country",
+      "arrow_type": "dictionary<values=string, indices=int32, ordered=0>",
+      "nullable": true
+    }
+  ]
+}

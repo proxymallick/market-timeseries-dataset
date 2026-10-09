@@ -1,0 +1,6 @@
+{
+  "github": {"repositories": []},
+  "huggingface": {"datasets": []},
+  "zenodo": {"records": []},
+  "kaggle": {"datasets": []}
+}

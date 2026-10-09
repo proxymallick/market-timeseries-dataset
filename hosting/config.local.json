@@ -1,0 +1,7 @@
+{
+  "github": {"repository": null, "release_assets": false},
+  "huggingface": {"dataset": null},
+  "zenodo": {"record_id": null, "doi": null},
+  "kaggle": {"dataset": null},
+  "publication_status": "not_published"
+}

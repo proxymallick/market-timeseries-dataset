@@ -1,0 +1,50 @@
+{
+  "format": "Parquet",
+  "fields": [
+    {
+      "name": "item_id",
+      "arrow_type": "string",
+      "nullable": true
+    },
+    {
+      "name": "timestamp",
+      "arrow_type": "timestamp[ns, tz=UTC]",
+      "nullable": true
+    },
+    {
+      "name": "open",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "high",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "low",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "close",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "volume",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "amount",
+      "arrow_type": "double",
+      "nullable": true
+    },
+    {
+      "name": "trade_count",
+      "arrow_type": "int64",
+      "nullable": true
+    }
+  ]
+}

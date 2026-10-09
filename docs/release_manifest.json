@@ -1,0 +1,823 @@
+{
+  "created_at_utc": "2026-10-09T12:49:11.194624+00:00",
+  "status": "local preparation only; not published",
+  "files": [
+    {
+      "path": "data/events/economic_events/year=2000/country=AU/events.parquet",
+      "bytes": 15082,
+      "sha256": "ab882064aba15f83fc5b74566c1b9fb77d0a5d689b2da0f2080c068d20408e9b",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2000/country=AU/events.parquet",
+      "row_count": 16
+    },
+    {
+      "path": "data/events/economic_events/year=2001/country=AU/events.parquet",
+      "bytes": 18178,
+      "sha256": "a14780bfda48fbae24a24e4b718b8215fe5b86034ba1dc63fdf110ac84ad41ff",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2001/country=AU/events.parquet",
+      "row_count": 27
+    },
+    {
+      "path": "data/events/economic_events/year=2002/country=AU/events.parquet",
+      "bytes": 18853,
+      "sha256": "568742ee0fb0b5f83827c49d7f5eaf5871e1d2e2556b5a506c5a090b687e3e2c",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2002/country=AU/events.parquet",
+      "row_count": 30
+    },
+    {
+      "path": "data/events/economic_events/year=2003/country=AU/events.parquet",
+      "bytes": 26516,
+      "sha256": "e527a9f2a6411b4e6f3e30d1e84ed86a69ff3dc1b20fe1216410ec7625043999",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2003/country=AU/events.parquet",
+      "row_count": 59
+    },
+    {
+      "path": "data/events/economic_events/year=2004/country=AU/events.parquet",
+      "bytes": 27928,
+      "sha256": "01310edc7c3376c680f1c3342108427992bd9dce5d386f3c1b5e4f05d54bd018",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2004/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2005/country=AU/events.parquet",
+      "bytes": 27805,
+      "sha256": "9ee436a6f32db8a8108f64ca5843f9ef0feaa304296387320476c3f2cf9258dc",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2005/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2006/country=AU/events.parquet",
+      "bytes": 27854,
+      "sha256": "005e41e5cc0985c5ca9cb8e72266cfd681d4d44fff9b8601126e76e005d73906",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2006/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2006/country=US/events.parquet",
+      "bytes": 14874,
+      "sha256": "4c696eac0c92b1013f915cd14b86628215b423bee308aed0573099870a5f3e89",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2006/country=US/events.parquet",
+      "row_count": 16
+    },
+    {
+      "path": "data/events/economic_events/year=2007/country=AU/events.parquet",
+      "bytes": 27675,
+      "sha256": "e6b9ed0b586abbbd18ff03592f365ce641a3fdaf61cace4d267f272d7fbd7653",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2007/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2007/country=US/events.parquet",
+      "bytes": 16179,
+      "sha256": "c00e70d49f721b585d5eef9d6348aa8016ab99f96d8556273e3956de292a03c9",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2007/country=US/events.parquet",
+      "row_count": 19
+    },
+    {
+      "path": "data/events/economic_events/year=2008/country=AU/events.parquet",
+      "bytes": 27809,
+      "sha256": "7f1dff249d7040e8c76c9eaf53c04dd5c0644c9ac3b08ceaf94c36bd086787fe",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2008/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2008/country=US/events.parquet",
+      "bytes": 36209,
+      "sha256": "92d675477891ab173998a1a85e434844acbffa7a06d5121d236b28aa5a492306",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2008/country=US/events.parquet",
+      "row_count": 90
+    },
+    {
+      "path": "data/events/economic_events/year=2009/country=AU/events.parquet",
+      "bytes": 27784,
+      "sha256": "85223bdec9e0308bdd1dadb11c51fc354e1b824ca5e310cb08766a3f17983ab9",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2009/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2009/country=US/events.parquet",
+      "bytes": 32797,
+      "sha256": "52d5a0521ed06e897a37d6aafe1eab06a32a5d9d374eb35647969370a925fbf1",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2009/country=US/events.parquet",
+      "row_count": 77
+    },
+    {
+      "path": "data/events/economic_events/year=2010/country=AU/events.parquet",
+      "bytes": 27725,
+      "sha256": "72869f1aeac5ddf167608963f7d96f96b9ecdfaa564ce5e01a08eab968932c51",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2010/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2010/country=US/events.parquet",
+      "bytes": 21158,
+      "sha256": "ce0de3819c16e13b06b501448cbd062788020b16de5f97e9abae567e9b07d329",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2010/country=US/events.parquet",
+      "row_count": 36
+    },
+    {
+      "path": "data/events/economic_events/year=2011/country=AU/events.parquet",
+      "bytes": 27817,
+      "sha256": "846bdb371a6dc707de012b89908192a0e79cedd603a5f41db882c824cc8ab029",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2011/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2011/country=US/events.parquet",
+      "bytes": 19434,
+      "sha256": "7628977a7dc91766d1ac90c94f549c19e65f605b8f4c234d2e06cafacdd2ad6a",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2011/country=US/events.parquet",
+      "row_count": 31
+    },
+    {
+      "path": "data/events/economic_events/year=2012/country=AU/events.parquet",
+      "bytes": 28024,
+      "sha256": "565b0258c93a1d7507decac6a5d3185c856b6027bd56ef2743cdc9fdd02e105c",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2012/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2012/country=US/events.parquet",
+      "bytes": 19535,
+      "sha256": "483d4aca629df8e18034a08b9e0e3d1539462e45908efe06d51cf7ade1e37b73",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2012/country=US/events.parquet",
+      "row_count": 31
+    },
+    {
+      "path": "data/events/economic_events/year=2013/country=AU/events.parquet",
+      "bytes": 28098,
+      "sha256": "b449f39867a042fea54951e754e0c50a9ea015fae4dc114175423fbaef12a33e",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2013/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2013/country=US/events.parquet",
+      "bytes": 19715,
+      "sha256": "580c0417bfd55b701df903d1321587f174f147b074928aae98c87483f2a3ba2c",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2013/country=US/events.parquet",
+      "row_count": 32
+    },
+    {
+      "path": "data/events/economic_events/year=2014/country=AU/events.parquet",
+      "bytes": 27799,
+      "sha256": "9b38af0d2aa3fe6f8a3498e79add52122bd281fc8fbf5588c89bedf623443ef6",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2014/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2014/country=US/events.parquet",
+      "bytes": 28539,
+      "sha256": "18fb0023cc520f616a3aee2b881fb3bddb32a580c6ac98f4aecda440ba24bd27",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2014/country=US/events.parquet",
+      "row_count": 65
+    },
+    {
+      "path": "data/events/economic_events/year=2015/country=AU/events.parquet",
+      "bytes": 27875,
+      "sha256": "358bb972d5a7377c2ba7fe4904e26d4a941d8f2a54cf301fdf4a3dc9464e05a8",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2015/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2015/country=US/events.parquet",
+      "bytes": 22920,
+      "sha256": "29e1828c6afe11195ccbfaa76fa0a5a0a630595dbe2c728f2dffa1fe7e25734f",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2015/country=US/events.parquet",
+      "row_count": 43
+    },
+    {
+      "path": "data/events/economic_events/year=2016/country=AU/events.parquet",
+      "bytes": 27844,
+      "sha256": "1ce0d81b5e870bbaf56e2dd2740f0e65b9b75efdba616fb85e79652075d0a58b",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2016/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2016/country=US/events.parquet",
+      "bytes": 23455,
+      "sha256": "079a61db6db93be63478d936f8320ce8e34119d426d371bf6e99a38637a997bd",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2016/country=US/events.parquet",
+      "row_count": 42
+    },
+    {
+      "path": "data/events/economic_events/year=2017/country=AU/events.parquet",
+      "bytes": 27862,
+      "sha256": "3df87887ec5ad13cd5c858da99cf8a8ced0b779cd0637e6bf13c1324f2ce62f6",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2017/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2017/country=US/events.parquet",
+      "bytes": 23848,
+      "sha256": "6d530204689dcb9f3d16bfa62fce82fb3556ad385acfff3c398bcff9aa32418d",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2017/country=US/events.parquet",
+      "row_count": 44
+    },
+    {
+      "path": "data/events/economic_events/year=2018/country=AU/events.parquet",
+      "bytes": 27922,
+      "sha256": "9b9ea6c4f909fad2ffe4f7c5196fd0135f283d4e2a8f9a18baaa1071ea1370a3",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2018/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2018/country=US/events.parquet",
+      "bytes": 23167,
+      "sha256": "de64b8003bcd484c658edec8521e94bafbe136185a63638bc6cea3befd500d8d",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2018/country=US/events.parquet",
+      "row_count": 41
+    },
+    {
+      "path": "data/events/economic_events/year=2019/country=AU/events.parquet",
+      "bytes": 28165,
+      "sha256": "b53a11b7ff0e3eada69afb53b0f8ddd637da0ff7dd9f2837a43f46295bab4772",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2019/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2019/country=US/events.parquet",
+      "bytes": 22994,
+      "sha256": "35d0ae8e844783948a7f9941679522904e975b5e533703684a30546bfed01a0d",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2019/country=US/events.parquet",
+      "row_count": 41
+    },
+    {
+      "path": "data/events/economic_events/year=2020/country=AU/events.parquet",
+      "bytes": 28379,
+      "sha256": "fef13b3baaf1c4475a79c6c825795d1b89e5dec4f648b05afa78c116d867da4b",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2020/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2020/country=US/events.parquet",
+      "bytes": 34823,
+      "sha256": "464766d2c51b45e8c5bb4f7c0be3c6cc3c6829a6ed77e681820ae56dd4da78a1",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2020/country=US/events.parquet",
+      "row_count": 75
+    },
+    {
+      "path": "data/events/economic_events/year=2021/country=AU/events.parquet",
+      "bytes": 28232,
+      "sha256": "9f6f9edbf9e51f51f420a097e81a6c4ac3523637a055ffa05a9ea7524d8b664b",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2021/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2021/country=US/events.parquet",
+      "bytes": 21728,
+      "sha256": "6059b2758193701603519ceee2786870d8ad4c394672523f791ffb965041f243",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2021/country=US/events.parquet",
+      "row_count": 36
+    },
+    {
+      "path": "data/events/economic_events/year=2022/country=AU/events.parquet",
+      "bytes": 28299,
+      "sha256": "08c7d576d7dedb06a1c7ac4cda2e058737fada35bfa53371f47d911c2c8720cb",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2022/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2022/country=US/events.parquet",
+      "bytes": 22836,
+      "sha256": "09f0acd91da6f832b2f46c460b8f42133d274a5eae6548bf02998e65ed5077fd",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2022/country=US/events.parquet",
+      "row_count": 40
+    },
+    {
+      "path": "data/events/economic_events/year=2023/country=AU/events.parquet",
+      "bytes": 28335,
+      "sha256": "b0995d65b8e8d31f3835c44ec64ab108a8da59c898b22eea2e71da2ba17ae2ee",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2023/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2023/country=US/events.parquet",
+      "bytes": 22922,
+      "sha256": "cb98c2c9dba5d635124e83d4ec5b37718073e3b2b44de754741091641fa30869",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2023/country=US/events.parquet",
+      "row_count": 39
+    },
+    {
+      "path": "data/events/economic_events/year=2024/country=AU/events.parquet",
+      "bytes": 28302,
+      "sha256": "9128b7c53332e2f7534884ec0d6e5f57a95813922c43802bcad37611b2ce0d83",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2024/country=AU/events.parquet",
+      "row_count": 64
+    },
+    {
+      "path": "data/events/economic_events/year=2024/country=US/events.parquet",
+      "bytes": 20749,
+      "sha256": "ca9be417abfed32cd9fa2b8a1f4aa25020e3a7b1c6c3aa4a961a6558422aba85",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2024/country=US/events.parquet",
+      "row_count": 33
+    },
+    {
+      "path": "data/events/economic_events/year=2025/country=AU/events.parquet",
+      "bytes": 27470,
+      "sha256": "e60f6a2aa547e08a6bbfb6359562a566bc5006bc5a0058730819c5c1af73bbda",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2025/country=AU/events.parquet",
+      "row_count": 61
+    },
+    {
+      "path": "data/events/economic_events/year=2025/country=US/events.parquet",
+      "bytes": 20112,
+      "sha256": "76990498787348e4b0d0f95f9391dda7236b7bc10830169ee112d42d3e9d22c9",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2025/country=US/events.parquet",
+      "row_count": 31
+    },
+    {
+      "path": "data/events/economic_events/year=2026/country=AU/events.parquet",
+      "bytes": 22814,
+      "sha256": "8b151c64ab4155336bc38099e52657e7f5e83e5c981ceb23cbb9b0f29afde601",
+      "source_dependencies": [
+        "abs"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2026/country=AU/events.parquet",
+      "row_count": 44
+    },
+    {
+      "path": "data/events/economic_events/year=2026/country=US/events.parquet",
+      "bytes": 17630,
+      "sha256": "060624cd35e653f9dbbbbb7e651d77c2eec06c2c73d74f7ac078f0e3c672609a",
+      "source_dependencies": [
+        "fed"
+      ],
+      "licenses": [
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Verified-time agency economic-event records; source values preserved",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events/year=2026/country=US/events.parquet",
+      "row_count": 22
+    },
+    {
+      "path": "data/events/economic_events_review.parquet",
+      "bytes": 472240,
+      "sha256": "2b56124daa3a67f51f29a895cd0766afd9d4093724f4fbcd1da697932c7a59f3",
+      "row_count": 4219,
+      "source_dependencies": [
+        "abs",
+        "fed",
+        "aofm",
+        "rba_events",
+        "usda"
+      ],
+      "licenses": [
+        "CC BY 4.0 for general ABS website material, subject to exceptions and release-specific notices",
+        "Federal Reserve Board website public-domain statement; no SPDX license assigned",
+        "CC BY 4.0 for AOFM-produced website material, subject to exceptions",
+        "CC BY 4.0 for ordinary RBA material, subject to third-party and other excluded-material terms",
+        "NAL website public-domain/copyright guidance; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Structured agency-origin factual release metadata only; no logos, imagery or third-party attachments. Agency attribution/license URLs in THIRD_PARTY_LICENSES.md; changes logged; source URLs and hashes retained.",
+      "description": "Separate review-only records; excludes unresolved FDIC source; not timestamp-eligible training data",
+      "source_locator": "Documents/Market Timeseries/data/processed/economic_events_quarantine.parquet"
+    },
+    {
+      "path": "data/markets/hyperliquid_hourly.parquet",
+      "bytes": 112591,
+      "sha256": "ca978aa285eb341fd831359a0c4606c3423abc6c94c5fcd278e035aab4b497f8",
+      "source_dependencies": [
+        "hyperliquid_hourly"
+      ],
+      "licenses": [
+        "CC BY 4.0 conditions inherited from source material; no separate upstream license for this project's derived files identified"
+      ],
+      "conditions_satisfied": "Address-free aggregate fields verified; DataCite publisher-registered CC-BY-4.0 confirmed live; Albers et al. credit, DOI/license link and prior aggregation notice retained.",
+      "description": "Hourly OHLCVA derived from BTC/ETH/SOL perpetual trades",
+      "source_locator": "Documents/Market Timeseries/data/processed/hyperliquid_perp_hourly_2025_12_v1.parquet",
+      "row_count": 2233
+    },
+    {
+      "path": "data/timeseries/cftc_tff.parquet",
+      "bytes": 429245,
+      "sha256": "9c1a19d63ef03a2bff8845847321e45ff6a7cf5c6d26166b0794115de19af883",
+      "source_dependencies": [
+        "cftc"
+      ],
+      "licenses": [
+        "CFTC website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Agency-origin numeric positioning table; no third-party images/seals; CFTC credit and source policy link; transforms documented.",
+      "description": "Weekly Treasury futures TFF positioning",
+      "source_locator": "Documents/Market Timeseries/data/processed/macro/cftc_tff_treasury_positions_2006_2025_v1.parquet",
+      "row_count": 4084
+    },
+    {
+      "path": "data/timeseries/rba_f2.parquet",
+      "bytes": 125336,
+      "sha256": "2e528e4f106b8a244a386d38bd0f30b46c76f259a913c18b2699bfdd53f6e183",
+      "source_dependencies": [
+        "rba_f2"
+      ],
+      "licenses": [
+        "RBA Financial Data terms, Copyright and Disclaimer Notice section 5; separate from general CC BY 4.0 grant"
+      ],
+      "conditions_satisfied": "RBA origin of F2 series confirmed by official CSV metadata; attribution and free-source disclosure; no endorsement; retain Financial Data section 5 terms and third-party caveat. Cash yields are not an RBA-administered benchmark.",
+      "description": "Daily interpolated Australian Government Security cash yields",
+      "source_locator": "Documents/Market Timeseries/data/processed/macro/rba_f2_government_yields_2013_2025_v1.parquet",
+      "row_count": 3196
+    },
+    {
+      "path": "data/timeseries/cftc_disaggregated_2018_2024.csv",
+      "bytes": 88333114,
+      "sha256": "9adaed7aaa75be1b3ebdd7b8b112228e9443a13042ea1e58e6632c73f05dbf1e",
+      "source_dependencies": [
+        "cftc"
+      ],
+      "licenses": [
+        "CFTC website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Agency-origin numeric positioning table; no third-party images/seals; CFTC credit and source policy link; transforms documented.",
+      "description": "Published CFTC disaggregated futures-and-options combined positioning",
+      "source_locator": "Documents/ML model futures contracts/datasets/cftc_cot/cftc_disaggregated_fut_and_opt_2018_2024.csv"
+    },
+    {
+      "path": "data/timeseries/cftc_disaggregated_2018_2024.parquet",
+      "bytes": 16201232,
+      "sha256": "f208757a6b469d1a419fdfbd23ccb3ed98dbb2a15d05fde60ec15604a39440f4",
+      "source_dependencies": [
+        "cftc"
+      ],
+      "licenses": [
+        "CFTC website public-domain statement; no SPDX license assigned"
+      ],
+      "conditions_satisfied": "Agency-origin numeric positioning table; no third-party images/seals; CFTC credit and source policy link; transforms documented.",
+      "description": "Lossless field-text Parquet companion to raw CFTC CSV; numbers, NA markers and empty strings not coerced",
+      "source_locator": "Documents/ML model futures contracts/datasets/cftc_cot/cftc_disaggregated_fut_and_opt_2018_2024.csv",
+      "row_count": 83019
+    }
+  ]
+}

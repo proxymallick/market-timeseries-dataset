@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: >-
+  Cite the originating provider and applicable terms for each table in addition
+  to this curator citation. This is an unpublished local preparation snapshot;
+  it has no DOI or public repository URL.
+title: "Market Timeseries: Local Release Preparation"
+version: 0.1.0-local
+authors:
+  - family-names: Mallick
+    given-names: Prakash
+date-released: 2026-10-09
+type: dataset
+abstract: >-
+  A locally prepared, documented selection of macroeconomic release events,
+  public positioning and yield series, and derived hourly market bars. Prakash
+  Mallick is identified as curator; upstream source ownership remains with the
+  credited providers and creators. This snapshot has not been published.

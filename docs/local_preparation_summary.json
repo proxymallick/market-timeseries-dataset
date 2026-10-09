@@ -1,0 +1,17 @@
+{
+  "public_files": 54,
+  "public_bytes": 106875828,
+  "public_table_rows": {
+    "economic_events": 2465,
+    "economic_events_review": 4219,
+    "hyperliquid_hourly": 2233,
+    "cftc_tff": 4084,
+    "rba_f2": 3196,
+    "cftc_disaggregated": 83019
+  },
+  "restricted_copy_files": 32653,
+  "restricted_logical_bytes": 237154298717,
+  "restricted_copy_methods": {
+    "APFS copy-on-write clone": 32653
+  }
+}

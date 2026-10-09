@@ -1,0 +1,494 @@
+[
+  {
+    "output": "data/events/economic_events/year=2000/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "ab882064aba15f83fc5b74566c1b9fb77d0a5d689b2da0f2080c068d20408e9b",
+    "output_sha256": "ab882064aba15f83fc5b74566c1b9fb77d0a5d689b2da0f2080c068d20408e9b",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2001/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "a14780bfda48fbae24a24e4b718b8215fe5b86034ba1dc63fdf110ac84ad41ff",
+    "output_sha256": "a14780bfda48fbae24a24e4b718b8215fe5b86034ba1dc63fdf110ac84ad41ff",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2002/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "568742ee0fb0b5f83827c49d7f5eaf5871e1d2e2556b5a506c5a090b687e3e2c",
+    "output_sha256": "568742ee0fb0b5f83827c49d7f5eaf5871e1d2e2556b5a506c5a090b687e3e2c",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2003/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "e527a9f2a6411b4e6f3e30d1e84ed86a69ff3dc1b20fe1216410ec7625043999",
+    "output_sha256": "e527a9f2a6411b4e6f3e30d1e84ed86a69ff3dc1b20fe1216410ec7625043999",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2004/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "01310edc7c3376c680f1c3342108427992bd9dce5d386f3c1b5e4f05d54bd018",
+    "output_sha256": "01310edc7c3376c680f1c3342108427992bd9dce5d386f3c1b5e4f05d54bd018",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2005/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9ee436a6f32db8a8108f64ca5843f9ef0feaa304296387320476c3f2cf9258dc",
+    "output_sha256": "9ee436a6f32db8a8108f64ca5843f9ef0feaa304296387320476c3f2cf9258dc",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2006/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "005e41e5cc0985c5ca9cb8e72266cfd681d4d44fff9b8601126e76e005d73906",
+    "output_sha256": "005e41e5cc0985c5ca9cb8e72266cfd681d4d44fff9b8601126e76e005d73906",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2006/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "4c696eac0c92b1013f915cd14b86628215b423bee308aed0573099870a5f3e89",
+    "output_sha256": "4c696eac0c92b1013f915cd14b86628215b423bee308aed0573099870a5f3e89",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2007/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "e6b9ed0b586abbbd18ff03592f365ce641a3fdaf61cace4d267f272d7fbd7653",
+    "output_sha256": "e6b9ed0b586abbbd18ff03592f365ce641a3fdaf61cace4d267f272d7fbd7653",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2007/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "c00e70d49f721b585d5eef9d6348aa8016ab99f96d8556273e3956de292a03c9",
+    "output_sha256": "c00e70d49f721b585d5eef9d6348aa8016ab99f96d8556273e3956de292a03c9",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2008/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "7f1dff249d7040e8c76c9eaf53c04dd5c0644c9ac3b08ceaf94c36bd086787fe",
+    "output_sha256": "7f1dff249d7040e8c76c9eaf53c04dd5c0644c9ac3b08ceaf94c36bd086787fe",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2008/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "92d675477891ab173998a1a85e434844acbffa7a06d5121d236b28aa5a492306",
+    "output_sha256": "92d675477891ab173998a1a85e434844acbffa7a06d5121d236b28aa5a492306",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2009/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "85223bdec9e0308bdd1dadb11c51fc354e1b824ca5e310cb08766a3f17983ab9",
+    "output_sha256": "85223bdec9e0308bdd1dadb11c51fc354e1b824ca5e310cb08766a3f17983ab9",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2009/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "52d5a0521ed06e897a37d6aafe1eab06a32a5d9d374eb35647969370a925fbf1",
+    "output_sha256": "52d5a0521ed06e897a37d6aafe1eab06a32a5d9d374eb35647969370a925fbf1",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2010/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "72869f1aeac5ddf167608963f7d96f96b9ecdfaa564ce5e01a08eab968932c51",
+    "output_sha256": "72869f1aeac5ddf167608963f7d96f96b9ecdfaa564ce5e01a08eab968932c51",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2010/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "ce0de3819c16e13b06b501448cbd062788020b16de5f97e9abae567e9b07d329",
+    "output_sha256": "ce0de3819c16e13b06b501448cbd062788020b16de5f97e9abae567e9b07d329",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2011/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "846bdb371a6dc707de012b89908192a0e79cedd603a5f41db882c824cc8ab029",
+    "output_sha256": "846bdb371a6dc707de012b89908192a0e79cedd603a5f41db882c824cc8ab029",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2011/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "7628977a7dc91766d1ac90c94f549c19e65f605b8f4c234d2e06cafacdd2ad6a",
+    "output_sha256": "7628977a7dc91766d1ac90c94f549c19e65f605b8f4c234d2e06cafacdd2ad6a",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2012/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "565b0258c93a1d7507decac6a5d3185c856b6027bd56ef2743cdc9fdd02e105c",
+    "output_sha256": "565b0258c93a1d7507decac6a5d3185c856b6027bd56ef2743cdc9fdd02e105c",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2012/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "483d4aca629df8e18034a08b9e0e3d1539462e45908efe06d51cf7ade1e37b73",
+    "output_sha256": "483d4aca629df8e18034a08b9e0e3d1539462e45908efe06d51cf7ade1e37b73",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2013/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "b449f39867a042fea54951e754e0c50a9ea015fae4dc114175423fbaef12a33e",
+    "output_sha256": "b449f39867a042fea54951e754e0c50a9ea015fae4dc114175423fbaef12a33e",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2013/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "580c0417bfd55b701df903d1321587f174f147b074928aae98c87483f2a3ba2c",
+    "output_sha256": "580c0417bfd55b701df903d1321587f174f147b074928aae98c87483f2a3ba2c",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2014/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9b38af0d2aa3fe6f8a3498e79add52122bd281fc8fbf5588c89bedf623443ef6",
+    "output_sha256": "9b38af0d2aa3fe6f8a3498e79add52122bd281fc8fbf5588c89bedf623443ef6",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2014/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "18fb0023cc520f616a3aee2b881fb3bddb32a580c6ac98f4aecda440ba24bd27",
+    "output_sha256": "18fb0023cc520f616a3aee2b881fb3bddb32a580c6ac98f4aecda440ba24bd27",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2015/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "358bb972d5a7377c2ba7fe4904e26d4a941d8f2a54cf301fdf4a3dc9464e05a8",
+    "output_sha256": "358bb972d5a7377c2ba7fe4904e26d4a941d8f2a54cf301fdf4a3dc9464e05a8",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2015/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "29e1828c6afe11195ccbfaa76fa0a5a0a630595dbe2c728f2dffa1fe7e25734f",
+    "output_sha256": "29e1828c6afe11195ccbfaa76fa0a5a0a630595dbe2c728f2dffa1fe7e25734f",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2016/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "1ce0d81b5e870bbaf56e2dd2740f0e65b9b75efdba616fb85e79652075d0a58b",
+    "output_sha256": "1ce0d81b5e870bbaf56e2dd2740f0e65b9b75efdba616fb85e79652075d0a58b",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2016/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "079a61db6db93be63478d936f8320ce8e34119d426d371bf6e99a38637a997bd",
+    "output_sha256": "079a61db6db93be63478d936f8320ce8e34119d426d371bf6e99a38637a997bd",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2017/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "3df87887ec5ad13cd5c858da99cf8a8ced0b779cd0637e6bf13c1324f2ce62f6",
+    "output_sha256": "3df87887ec5ad13cd5c858da99cf8a8ced0b779cd0637e6bf13c1324f2ce62f6",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2017/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "6d530204689dcb9f3d16bfa62fce82fb3556ad385acfff3c398bcff9aa32418d",
+    "output_sha256": "6d530204689dcb9f3d16bfa62fce82fb3556ad385acfff3c398bcff9aa32418d",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2018/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9b9ea6c4f909fad2ffe4f7c5196fd0135f283d4e2a8f9a18baaa1071ea1370a3",
+    "output_sha256": "9b9ea6c4f909fad2ffe4f7c5196fd0135f283d4e2a8f9a18baaa1071ea1370a3",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2018/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "de64b8003bcd484c658edec8521e94bafbe136185a63638bc6cea3befd500d8d",
+    "output_sha256": "de64b8003bcd484c658edec8521e94bafbe136185a63638bc6cea3befd500d8d",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2019/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "b53a11b7ff0e3eada69afb53b0f8ddd637da0ff7dd9f2837a43f46295bab4772",
+    "output_sha256": "b53a11b7ff0e3eada69afb53b0f8ddd637da0ff7dd9f2837a43f46295bab4772",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2019/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "35d0ae8e844783948a7f9941679522904e975b5e533703684a30546bfed01a0d",
+    "output_sha256": "35d0ae8e844783948a7f9941679522904e975b5e533703684a30546bfed01a0d",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2020/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "fef13b3baaf1c4475a79c6c825795d1b89e5dec4f648b05afa78c116d867da4b",
+    "output_sha256": "fef13b3baaf1c4475a79c6c825795d1b89e5dec4f648b05afa78c116d867da4b",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2020/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "464766d2c51b45e8c5bb4f7c0be3c6cc3c6829a6ed77e681820ae56dd4da78a1",
+    "output_sha256": "464766d2c51b45e8c5bb4f7c0be3c6cc3c6829a6ed77e681820ae56dd4da78a1",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2021/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9f6f9edbf9e51f51f420a097e81a6c4ac3523637a055ffa05a9ea7524d8b664b",
+    "output_sha256": "9f6f9edbf9e51f51f420a097e81a6c4ac3523637a055ffa05a9ea7524d8b664b",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2021/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "6059b2758193701603519ceee2786870d8ad4c394672523f791ffb965041f243",
+    "output_sha256": "6059b2758193701603519ceee2786870d8ad4c394672523f791ffb965041f243",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2022/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "08c7d576d7dedb06a1c7ac4cda2e058737fada35bfa53371f47d911c2c8720cb",
+    "output_sha256": "08c7d576d7dedb06a1c7ac4cda2e058737fada35bfa53371f47d911c2c8720cb",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2022/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "09f0acd91da6f832b2f46c460b8f42133d274a5eae6548bf02998e65ed5077fd",
+    "output_sha256": "09f0acd91da6f832b2f46c460b8f42133d274a5eae6548bf02998e65ed5077fd",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2023/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "b0995d65b8e8d31f3835c44ec64ab108a8da59c898b22eea2e71da2ba17ae2ee",
+    "output_sha256": "b0995d65b8e8d31f3835c44ec64ab108a8da59c898b22eea2e71da2ba17ae2ee",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2023/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "cb98c2c9dba5d635124e83d4ec5b37718073e3b2b44de754741091641fa30869",
+    "output_sha256": "cb98c2c9dba5d635124e83d4ec5b37718073e3b2b44de754741091641fa30869",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2024/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9128b7c53332e2f7534884ec0d6e5f57a95813922c43802bcad37611b2ce0d83",
+    "output_sha256": "9128b7c53332e2f7534884ec0d6e5f57a95813922c43802bcad37611b2ce0d83",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2024/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "ca9be417abfed32cd9fa2b8a1f4aa25020e3a7b1c6c3aa4a961a6558422aba85",
+    "output_sha256": "ca9be417abfed32cd9fa2b8a1f4aa25020e3a7b1c6c3aa4a961a6558422aba85",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2025/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "e60f6a2aa547e08a6bbfb6359562a566bc5006bc5a0058730819c5c1af73bbda",
+    "output_sha256": "e60f6a2aa547e08a6bbfb6359562a566bc5006bc5a0058730819c5c1af73bbda",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2025/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "76990498787348e4b0d0f95f9391dda7236b7bc10830169ee112d42d3e9d22c9",
+    "output_sha256": "76990498787348e4b0d0f95f9391dda7236b7bc10830169ee112d42d3e9d22c9",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2026/country=AU/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "8b151c64ab4155336bc38099e52657e7f5e83e5c981ceb23cbb9b0f29afde601",
+    "output_sha256": "8b151c64ab4155336bc38099e52657e7f5e83e5c981ceb23cbb9b0f29afde601",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events/year=2026/country=US/events.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "060624cd35e653f9dbbbbb7e651d77c2eec06c2c73d74f7ac078f0e3c672609a",
+    "output_sha256": "060624cd35e653f9dbbbbb7e651d77c2eec06c2c73d74f7ac078f0e3c672609a",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/events/economic_events_review.parquet",
+    "operation": "Filter independently attributable agency rows; exclude unresolved FDIC origin; Parquet ZSTD rewrite",
+    "source_sha256": "6a23995d79aa96677b2fee0f61c775f1bd3c34a4da9b8e735778f0fe291e4340",
+    "output_sha256": "2b56124daa3a67f51f29a895cd0766afd9d4093724f4fbcd1da697932c7a59f3",
+    "rows_before": 4796,
+    "rows_after": 4219,
+    "rows_removed": 577,
+    "removed_source_counts": {
+      "FDIC": 577
+    },
+    "values_changed": 0,
+    "columns_changed": 0
+  },
+  {
+    "output": "data/markets/hyperliquid_hourly.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "ca978aa285eb341fd831359a0c4606c3423abc6c94c5fcd278e035aab4b497f8",
+    "output_sha256": "ca978aa285eb341fd831359a0c4606c3423abc6c94c5fcd278e035aab4b497f8",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/timeseries/cftc_tff.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9c1a19d63ef03a2bff8845847321e45ff6a7cf5c6d26166b0794115de19af883",
+    "output_sha256": "9c1a19d63ef03a2bff8845847321e45ff6a7cf5c6d26166b0794115de19af883",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/timeseries/rba_f2.parquet",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "2e528e4f106b8a244a386d38bd0f30b46c76f259a913c18b2699bfdd53f6e183",
+    "output_sha256": "2e528e4f106b8a244a386d38bd0f30b46c76f259a913c18b2699bfdd53f6e183",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/timeseries/cftc_disaggregated_2018_2024.csv",
+    "operation": "byte-preserving independent copy",
+    "copy_method": "APFS copy-on-write clone",
+    "source_sha256": "9adaed7aaa75be1b3ebdd7b8b112228e9443a13042ea1e58e6632c73f05dbf1e",
+    "output_sha256": "9adaed7aaa75be1b3ebdd7b8b112228e9443a13042ea1e58e6632c73f05dbf1e",
+    "rows_removed": 0,
+    "values_changed": 0
+  },
+  {
+    "output": "data/timeseries/cftc_disaggregated_2018_2024.parquet",
+    "operation": "CSV to Parquet ZSTD; preserve each CSV field as string, including literal NA/leading zeros/empty values; no numeric/date inference",
+    "source_sha256": "9adaed7aaa75be1b3ebdd7b8b112228e9443a13042ea1e58e6632c73f05dbf1e",
+    "output_sha256": "f208757a6b469d1a419fdfbd23ccb3ed98dbb2a15d05fde60ec15604a39440f4",
+    "rows_before": 83019,
+    "rows_after": 83019,
+    "values_changed": 0,
+    "representation_changed": true
+  }
+]

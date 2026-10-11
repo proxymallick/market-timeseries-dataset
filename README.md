@@ -12,14 +12,80 @@ There is no public download or DOI yet.
 
 I prepared six table products. “Conditional” means I reviewed the named material under the stated source terms; it does not clear every file from that source. Read the [source-by-source terms](THIRD_PARTY_LICENSES.md) and [release manifest](docs/release_manifest.json) before reuse.
 
-| Dataset | Coverage and frequency | Rows | Approx. bytes | Units / interpretation | Rights and caveats |
-|---|---|---:|---:|---|---|
-| Economic release events, verified-time directory (`data/events/economic_events/`) | 2000-01-28 to 2026-09-16; event-level; ABS (Australia) and Federal Reserve Board (US) | 2,465 | 1,202,070 | Per-row currency and unit where a numeric release value exists; most event rows are metadata-only | Conditional agency-origin factual release metadata; attribution, release-level exception checks, and source/hash provenance apply. UTC publication/availability timestamps are retained where established. |
-| Economic release events, review-only (`data/events/economic_events_review.parquet`) | Publication-date span 2000-01-05 to 2026-09-18; event/revision-level; AOFM, USDA, Federal Reserve, RBA, ABS | 4,219 | 472,240 | Per-row currency/unit; not every record contains a numeric value | Separate, review-only table. 4,129 rows have unknown release time; 90 are marked `source_revision_requires_review`. Do not treat as timestamp-eligible training data. Source rights are conditional and attribution-dependent. |
-| Hyperliquid hourly OHLCVA (`data/markets/hyperliquid_hourly.parquet`) | 2025-11-30 23:00 to 2025-12-31 23:00 UTC; hourly; BTC, ETH and SOL perpetuals | 2,233 | 112,591 | Venue price and size units; `amount` is sum(price × size), not fiat-converted | Derived aggregation of the Albers et al. CC BY 4.0 Open Book data; attribute the source, link the license, identify changes. This table is intended to omit account identifiers. |
-| CFTC TFF Treasury futures (`data/timeseries/cftc_tff.parquet`) | 2006-06-13 to 2025-12-30; weekly observed reports; four instruments | 4,084 | 429,245 | Contracts, as reported | CFTC agency public-domain statement supports copying of agency-created material; acknowledge CFTC and check for third-party inclusions. Date/report availability semantics matter. |
-| RBA F2 government bond yields (`data/timeseries/rba_f2.parquet`) | 2013-05-20 to 2025-12-31; daily observations on a weekly publication schedule | 3,196 | 125,336 | Yield percent; five Australian Government Security yield series | RBA Financial Data section 5 terms, not the general RBA CC BY grant. Credit RBA, avoid endorsement, and disclose if charging for access to material RBA publishes free. |
-| CFTC disaggregated futures-and-options positioning: source CSV plus lossless field-text Parquet companion (`data/timeseries/cftc_disaggregated_2018_2024.csv`, `data/timeseries/cftc_disaggregated_2018_2024.parquet`) | 2018-01-02 to 2024-12-31; weekly; 543 markets | 83,019 (same rows in each format) | 104,534,346 combined: CSV 88,333,114; Parquet 16,201,232 | Heterogeneous source `Contract_Units`; do not assume a common unit across markets. The Parquet companion stores all 191 fields as UTF-8 strings. | CFTC agency public-domain statement supports copying of agency-created information with acknowledgment; check artifact-level exceptions. The two format files are one dataset product, not separate observations. The inventory null scan verified the market-name and report-date columns only; other source CSV null counts are unverified. |
+| Dataset | Coverage | Rows | Size |
+|---|---|---:|---:|
+| Verified economic events | 2000-01-28 to 2026-09-16 · event-level | 2,465 | 1.20 MB |
+| Economic events for review | 2000-01-05 to 2026-09-18 · event/revision-level | 4,219 | 472 KB |
+| Hyperliquid hourly OHLCVA | 2025-11-30 to 2025-12-31 · hourly | 2,233 | 113 KB |
+| CFTC TFF Treasury futures | 2006-06-13 to 2025-12-30 · weekly | 4,084 | 429 KB |
+| RBA F2 government bond yields | 2013-05-20 to 2025-12-31 · daily observations | 3,196 | 125 KB |
+| CFTC disaggregated positioning | 2018-01-02 to 2024-12-31 · weekly | 83,019 | 104.5 MB |
+
+<details>
+<summary><strong>Verified economic events</strong> — ABS and Federal Reserve releases with established timing</summary>
+
+- **Path:** `data/events/economic_events/`
+- **Exact size:** 1,202,070 bytes
+- **Units:** Per-row currency and unit where a numeric value exists; most rows are metadata-only.
+- **Timing:** UTC publication and availability timestamps are retained where I could establish them.
+- **Rights:** Conditional agency-origin factual metadata. Source attribution, provenance, and release-level exception checks still apply.
+
+</details>
+
+<details>
+<summary><strong>Economic events for review</strong> — date-only records and uncertain revisions</summary>
+
+- **Path:** `data/events/economic_events_review.parquet`
+- **Exact size:** 472,240 bytes
+- **Sources:** AOFM, USDA, Federal Reserve, RBA, and ABS.
+- **Timing:** 4,129 rows have unknown release time; 90 are marked `source_revision_requires_review`. Do not use this table as timestamp-eligible training data.
+- **Rights:** Source-specific terms and attribution requirements still apply.
+
+</details>
+
+<details>
+<summary><strong>Hyperliquid hourly OHLCVA</strong> — BTC, ETH, and SOL perpetual bars</summary>
+
+- **Path:** `data/markets/hyperliquid_hourly.parquet`
+- **Exact coverage:** 2025-11-30 23:00 to 2025-12-31 23:00 UTC
+- **Exact size:** 112,591 bytes
+- **Units:** Venue-native price and size; `amount` is the sum of price × size, not a fiat conversion.
+- **Rights:** Derived from the Albers et al. CC BY 4.0 Open Book data. Attribute the source, link the license, and identify the aggregation. This table is intended to omit account identifiers.
+
+</details>
+
+<details>
+<summary><strong>CFTC TFF Treasury futures</strong> — four instruments reported weekly</summary>
+
+- **Path:** `data/timeseries/cftc_tff.parquet`
+- **Exact size:** 429,245 bytes
+- **Units:** Contracts, as reported by CFTC.
+- **Timing:** Report dates and public availability are different concepts and should be handled separately.
+- **Rights:** Acknowledge CFTC and check each artifact for third-party inclusions.
+
+</details>
+
+<details>
+<summary><strong>RBA F2 government bond yields</strong> — five Australian Government Security series</summary>
+
+- **Path:** `data/timeseries/rba_f2.parquet`
+- **Exact size:** 125,336 bytes
+- **Units:** Yield percent.
+- **Timing:** Daily observations on a weekly publication schedule.
+- **Rights:** RBA Financial Data section 5 applies instead of the general RBA CC BY grant. Credit RBA, avoid implied endorsement, and disclose if charging for data that RBA publishes free.
+
+</details>
+
+<details>
+<summary><strong>CFTC disaggregated positioning</strong> — one table in CSV and text-preserving Parquet formats</summary>
+
+- **Paths:** `data/timeseries/cftc_disaggregated_2018_2024.csv` and `data/timeseries/cftc_disaggregated_2018_2024.parquet`
+- **Exact size:** 104,534,346 bytes combined: 88,333,114-byte CSV and 16,201,232-byte Parquet file.
+- **Coverage:** 543 markets and 191 source fields. Both formats contain the same 83,019 rows.
+- **Units:** `Contract_Units` varies by market. Every Parquet field is stored as UTF-8 text.
+- **Rights and limits:** Acknowledge CFTC and check for artifact-level exceptions. The null scan covered only market name and report date; other source CSV null counts remain unverified.
+
+</details>
 
 The sizes above are exact. Together the products use 106,875,828 bytes across 54 files and contain 99,216 rows after counting the CFTC CSV and Parquet companion once. That total mixes releases, revisions, reports, yields, and market bars. It is not a sample size, and summing columns across these unrelated schemas would not be meaningful.
 

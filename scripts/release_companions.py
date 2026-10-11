@@ -1,4 +1,4 @@
-"""Helpers for recording alternate, lossless representations in a local release."""
+"""Record lossless companion formats in the release manifest."""
 import hashlib
 from pathlib import Path
 
@@ -17,13 +17,10 @@ def add_lossless_parquet_companion(
     *, source_csv, release_csv, destination, base, source_locator,
     source_dependencies, licenses, conditions_satisfied, description,
 ):
-    """Create a field-text Parquet companion and return its audit records.
+    """Write a text-preserving Parquet companion and its audit records.
 
-    ``source_csv`` is the original input, while ``release_csv`` is its
-    byte-preserving public copy. The converter reads the public copy so the
-    manifest's source hash remains traceable to the input file. The returned
-    rows describe an alternate representation; callers must not add a new
-    dataset-statistics entry for the companion.
+    The release CSV must match the source. The returned rows describe another
+    format of the same data, so callers must not count it as a new dataset.
     """
     source_csv = Path(source_csv)
     release_csv = Path(release_csv)

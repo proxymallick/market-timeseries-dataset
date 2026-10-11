@@ -1,8 +1,8 @@
 # GitHub visitors and analytics
 
-Repository: https://github.com/proxymallick/market-timeseries-dataset. See [the current summary](../metrics/README.md) and [CSV history](../metrics/metrics_log.csv).
+The private repository is <https://github.com/proxymallick/market-timeseries-dataset>. I keep the latest counters in the [summary](../metrics/README.md) and retain each collection in the [CSV history](../metrics/metrics_log.csv).
 
-On 2026-10-09 UTC the signed-in GitHub Traffic URL redirected to Dependency Insights. The page explicitly disabled Traffic for this private repository and stated: “Upgrade to GitHub Pro or make this repository public to enable this feature.” No private-to-public change or paid upgrade was performed. Current visitor and traffic counts are **unavailable**, not zero. A CLI traffic request also returned 404 because its saved token does not have access to this new private repository; GitHub Desktop push authorization is separate from GitHub CLI API access.
+On 2026-10-09 UTC, GitHub redirected the signed-in Traffic page to Dependency Insights and disabled Traffic for this private repository. I did not make the repository public or buy an upgrade. Visitor and traffic counts are therefore **unavailable**, not zero. The saved CLI token also returned 404 because it cannot access this repository; GitHub Desktop uses separate authorization.
 
 ## What the counters mean
 
@@ -17,15 +17,15 @@ On 2026-10-09 UTC the signed-in GitHub Traffic URL redirected to Dependency Insi
 | Stars / forks / watch subscriptions | Repository metadata snapshots, independent of traffic |
 | Release asset downloads | Asset counters when actual release assets exist; no repository-file download counter is invented |
 
-The collection keeps response-level 14-day totals separately from daily counts. Weekly runs preserve observed buckets before GitHub's short retention window expires, but cannot recover earlier history or create an all-time unique-person count. Overlapping windows and cumulative snapshots are never added together. Popular sources/paths are incomplete top-ten lists, not a full visitor log. Empty lists are not individual visitor counts.
+I keep GitHub's 14-day totals separate from its daily buckets. Weekly runs preserve what GitHub exposes before the short window expires, but they cannot recover older history or create an all-time count of people. I never add overlapping windows or cumulative snapshots. Referrers and popular paths are top-ten lists, not a full visitor log.
 
 ## Collection and access
 
-`python scripts/collect_metrics.py --github-auth` delegates authenticated requests to the existing `gh api` client. It does not read or print credential files, passwords or token values. Plain invocation remains keyless. Authenticated GitHub API requests stay on `api.github.com`; other hosts remain public/keyless. Failed endpoints are logged as unavailable. The report is generated with `python scripts/render_analytics.py`.
+Run `python scripts/collect_metrics.py --github-auth` to use the existing `gh api` login. The script does not read or print credential files or token values. Without that flag it stays keyless. Authenticated requests are restricted to `api.github.com`, and failed endpoints are recorded as unavailable. Build the summary with `python scripts/render_analytics.py`.
 
-The weekly GitHub Action uses the existing repository-scoped `GITHUB_TOKEN` through the `gh` client for metadata and asset counters, and can use an optional owner-configured Actions secret named `REPO_ANALYTICS_TOKEN` for traffic. GitHub's documented traffic API fine-grained permission is **Administration: read** on this repository; ordinary Contents access alone does not provide traffic access. An eligible account plan and repository API permissions must both be checked. Do not put a token in source, CSV, command arguments or a chat message. Creating or broadening token access is an owner step; none was performed here.
+The weekly action uses the repository-scoped `GITHUB_TOKEN` for metadata and asset counters. It can use an optional `REPO_ANALYTICS_TOKEN` secret for traffic. GitHub documents **Administration: read** as the required fine-grained permission; Contents access alone is insufficient. The account plan must also support private traffic. Never place a token in source, CSV, command arguments, or chat.
 
-All reporting remains inside this private repository. Only aggregate counts and repository/referrer paths are stored. No personal visitor identities, IPs, contact details or cross-site tracking are collected. Traffic and popularity fields may disclose private repository usage patterns, so review this history before any later public release.
+I keep these reports inside the private repository. They contain aggregate counts and repository or referrer paths, not identities, IP addresses, contact details, cookies, or tracking pixels. The history can still reveal private usage patterns, so it needs review before any public release.
 
 ## Official references, checked 2026-10-09 UTC
 

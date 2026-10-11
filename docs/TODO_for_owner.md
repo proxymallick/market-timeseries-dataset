@@ -1,12 +1,12 @@
-# Owner checkpoint and remaining gates
+# My release checklist
 
-## Local authorization and audit checkpoint
+## Audit checkpoint
 
-The owner authorized completion of all requested **local** preparation after discovery, including the licensing audit and draft publication documentation. The earlier discovery-only confirmation pause is complete and is not a remaining prerequisite for local work. The source-family audit was reviewed on 2026-10-09 UTC and is recorded in [`license_audit.md`](license_audit.md), the machine-readable [`source_license_registry.json`](source_license_registry.json), and supporting evidence under `LICENSES/`.
+I completed the local preparation, licensing audit, and draft publication material after reviewing the discovery results. The source-family audit was checked on 2026-10-09 UTC and is recorded in [`license_audit.md`](license_audit.md), [`source_license_registry.json`](source_license_registry.json), and `LICENSES/`.
 
-This is the audit checkpoint: 18 source-family decisions are recorded, every inventoried file has a local source-family mapping in the private file-level audit CSV, and proposed table products are separately named in the 54-file [`release_manifest.json`](release_manifest.json). The prepared tables total 106,875,828 bytes. This count is for the proposed table files, not the entire discovery inventory. The CFTC disaggregated table has a source CSV and a same-row-count text Parquet companion; the companion adds a representation, not another table. The selected set preserves uncertainty explicitly and does not claim blanket rights clearance. The detailed audit has limitations, including unresolved historical contract scope, product-level exceptions and incomplete scans described in the audit and dataset card.
+The audit records 18 source-family decisions and maps every inventoried file to a family in the private file-level CSV. The 54-file [`release_manifest.json`](release_manifest.json) names the prepared products, totaling 106,875,828 bytes. The CFTC CSV and text-preserving Parquet companion contain the same rows and count as one product. I preserve unresolved rights and incomplete scans instead of claiming blanket clearance.
 
-All work documented here is local. No upload, remote push, external publication, DOI registration, or provider contact has occurred. Permission-request text in [`permission_requests.md`](permission_requests.md) is unsent. This checkpoint is not an approval to publish or a legal opinion.
+Private GitHub and Drive copies now exist, but I have not published the dataset, registered a DOI, or contacted a provider. The drafts in [`permission_requests.md`](permission_requests.md) remain unsent. This checkpoint is neither publication approval nor a legal opinion.
 
 ## Local deliverables
 
@@ -27,7 +27,7 @@ These are execution and accuracy checks, not requests to re-authorize the audit:
 - [x] Complete the dataset-only paper and figure/PDF visual inspection if those deliverables remain in scope; use no model performance claims.
 - [x] Complete the host-metrics implementation/configuration checks if those deliverables remain in scope; no credentials should be stored.
 
-## Owner decisions required before any external release
+## Decisions before a public release
 
 - [ ] Recheck all source terms and acquisition-date rights. In particular resolve or continue to hold Treasury and FDIC data; FI-2010 source-venue rights; the Coinbase CC0/source-terms conflict; FinCast vendor provenance; Qlib's original provider/license; and the Yahoo restricted exports/derivatives. Binance is not part of the proposed commercial-use selection under the audited NC-SA terms.
 - [ ] Decide whether any separately scoped non-commercial Binance release is desired and verify all NC-SA and venue conditions before preparing it.
@@ -38,14 +38,14 @@ These are execution and accuracy checks, not requests to re-authorize the audit:
 
 ## Status
 
-Current publication state is `private_preparation` in `hosting/config.local.json` and the local downloads badge data. Private GitHub metrics are configured; public dataset hosting metrics are not. The absence of a public identifier is intentional until one is selected and verified.
+The status is `private_preparation` in `hosting/config.local.json`. Private GitHub metrics are configured; public dataset-host metrics are not. I will add public identifiers only after selecting and verifying them.
 
 Local verification is recorded in [verification_report.md](verification_report.md). The local Git branch is `prepare-release`; its origin is the private GitHub repository.
 
 ## Subsequent private hosting authorization
 
-The owner authorized private GitHub and Google Drive copies on 2026-10-10 Sydney. The repository was created and pushed using the signed-in browser and GitHub Desktop. Ten prepared files were uploaded to the new Drive folder. See [private_hosting.md](private_hosting.md) for destinations. This supersedes the historical local-only boundary for these private copies; public publication, DOI registration and unresolved rights remain pending.
+On 2026-10-10 Sydney, I authorized private GitHub and Google Drive copies. I created and pushed the repository through the signed-in browser and GitHub Desktop, then uploaded ten prepared files to Drive. [private_hosting.md](private_hosting.md) records the locations. Public release, DOI registration, and unresolved rights remain pending.
 
 ## Repository analytics access
 
-Visitor and clone totals are currently unavailable. If traffic collection is desired, the owner must first choose an eligible private-repository GitHub plan and provide repository Administration read access through the optional Actions secret described in [github_analytics.md](github_analytics.md). No upgrade or visibility change has been made.
+Visitor and clone totals are unavailable on the current plan. Collecting them would require a plan that supports private Traffic Insights and repository Administration read access through the optional secret described in [github_analytics.md](github_analytics.md). I have not changed the plan or repository visibility.

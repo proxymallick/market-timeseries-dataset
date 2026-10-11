@@ -1,29 +1,26 @@
 # Contributing
 
-Thank you for helping improve the documentation, provenance, or reproducibility of this local dataset preparation.
+I welcome corrections to the documentation, provenance records, schemas, and reproduction steps. This is still a private preparation. Do not publish data, contact a provider, create a DOI, or change repository visibility as part of a contribution.
 
-## Scope and current status
+Useful changes include fixing a source URL, documenting a verified term or attribution requirement, clarifying a transformation, or improving the explanation of availability timing. Keep restricted and unresolved sources out of `data/`. Never add credentials, private files, or local absolute paths.
 
-This checkout is a local, unpublished preparation snapshot. Do not upload data, create a public release, contact a provider, or push to a remote as part of a contribution. A repository owner must explicitly authorize a later external release. The six table products in `docs/release_manifest.json` are proposed selections, not blanket permission to redistribute all source material.
+## Data and provenance changes
 
-Useful contributions include correcting source URLs, documenting a verified license or attribution condition, explaining a transformation, adding a schema clarification, and improving time-availability guidance. Keep restricted or unresolved records out of `data/` and do not add credentials, local absolute paths, or private user files.
+Every data change must be reproducible. Update `docs/release_manifest.json`, `docs/dataset_statistics.json`, the relevant schema, and `docs/transformation_log.json` together. Record the source family, source locator, known retrieval or release date, terms, attribution, transformation, byte size, row count, and SHA-256 hash.
 
-## Provenance and data changes
+Preserve the source's date semantics. Observation time and public availability are different fields, and a date-only record must not be given an invented intraday timestamp. A null value is not zero.
 
-Every data change must be reproducible and must update `docs/release_manifest.json`, `docs/dataset_statistics.json`, the applicable schema, and `docs/transformation_log.json`. Record the source family, source locator, retrieval or release date when known, license/terms, attribution, changes, byte size, row count, and a cryptographic hash. Preserve source-provided date semantics and distinguish observation time from public availability time. Never invent intraday timestamps for date-only records or infer zeros from null values.
+Check `THIRD_PARTY_LICENSES.md` and `docs/license_audit.md` before proposing a source. A public download, repository license, or downloader's software license does not establish rights in the data itself. If the rights chain is unclear, keep the source held and record what evidence would resolve it. The audit documents evidence and uncertainty; it does not make legal findings.
 
-Before proposing a source for inclusion, check the applicable entries in `THIRD_PARTY_LICENSES.md` and `docs/license_audit.md`. A dataset-host license label, downloader's code license, or public download link does not itself establish the data rights chain. If a source is unclear, keep it held and document what evidence would resolve it. Do not write that a use is illegal unless a qualified legal determination supports that conclusion; the audit records evidence and unresolved scope, not legal advice.
+## Writing style
 
-## Documentation style
+Use direct language and measured figures from the current manifest and statistics. Explain incomplete scans, uncertain dates, and overlap where they matter. Keep source creators separate from my role as curator. Do not invent a DOI, affiliation, contact address, repository, or publication claim.
 
-Use measured figures from the current machine-readable statistics and manifest. Qualify incomplete scans, null-count scope, source overlap, and uncertain dates explicitly. Distinguish source creators from this project's curator. Do not invent DOI, affiliation, repository, contact, or publication details.
+Before committing, check that:
 
-## Review checklist
+- the change stays within the private preparation scope;
+- rights, provenance, attribution, timestamps, units, and null semantics remain accurate;
+- data changes include regenerated statistics and hashes; and
+- local links point to the intended evidence or source.
 
-- The proposed change stays within the local preparation scope and does not publish, transmit, or push anything.
-- Rights, provenance, attribution, and source-specific restrictions are accurately represented.
-- Timestamps, units, missing values, frequencies, and coverage are described without changing their meaning.
-- Statistics and hashes are regenerated or reconciled when data change.
-- Links point to the local evidence files or the exact upstream source being described.
-
-Open a local change for review with a concise explanation of its source evidence and the files affected. There is no public issue tracker or contribution URL at this stage.
+Describe the evidence and affected files in the commit message or review note. There is no public issue tracker yet.

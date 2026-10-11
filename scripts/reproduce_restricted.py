@@ -1,4 +1,4 @@
-"""Re-create independent private copies from an owner-held manifest; no downloads."""
+"""Rebuild private copies from local inputs in the restricted manifest."""
 import argparse
 import json
 from pathlib import Path

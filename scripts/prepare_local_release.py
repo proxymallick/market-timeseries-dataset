@@ -1,4 +1,4 @@
-"""Local-only curated selection and independent restricted copies; no network/upload."""
+"""Build the local selection without uploading or changing source files."""
 import csv,json,hashlib,re
 from pathlib import Path
 from collections import Counter
@@ -39,7 +39,7 @@ def add_copy(source,target,families,conditions,description):
 def table_statistics(dataset_id,path,category,description,source_ids,frequency,units,temporal_field):
     path=Path(path)
     if path.suffix=='.csv':
-        # Raw CFTC wide table: compute count/date facts using two documented fields.
+        # Only these two fields have verified null and date statistics.
         df=pd.read_csv(path,usecols=['Report_Date_as_YYYY-MM-DD','Market_and_Exchange_Names'],low_memory=False)
         full_cols=next(csv.reader(path.open()))
         timestamp=pd.to_datetime(df['Report_Date_as_YYYY-MM-DD'],errors='raise')

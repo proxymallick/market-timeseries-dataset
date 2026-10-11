@@ -1,12 +1,12 @@
 # Unsent permission-request drafts
 
-**Status: drafts only; none have been sent.** No provider has been contacted by this preparation work. These requests seek rights clarification or additional permissions; they are not assertions that a provider must grant rights. Do not send from this document without a later, explicit owner instruction to contact the relevant provider.
+**These are drafts. I have not sent them or contacted any provider.** They ask for clarification or permission; they do not assume that a provider must grant either. Sending one requires a separate decision.
 
-Request the scope relevant to any proposed external release: commercial and non-commercial research, redistribution of source or transformed records, public hosting, retention of historical vintages, publication of aggregate statistics, and machine-learning training, fine-tuning, validation, or benchmark use. Describe the actual source, fields, collection period, transformation, and intended distribution. Ask whether a separate license is needed and whether the response covers third-party rights.
+Each request should name the actual source, fields, period, transformations, and intended distribution. It should cover commercial and non-commercial research, raw and transformed redistribution, public hosting, historical vintages, aggregates, and ML training or evaluation. It should also ask whether a separate license is required and whether the answer covers third-party rights.
 
 ## 1. Yahoo Finance futures exports and derivatives
 
-**Unsent draft. Route:** Yahoo's official permissions request page, which is the identified route for permission inquiries: <https://legal.yahoo.com/us/en/yahoo/permissions/requests/index.html>. No email address is supplied here. The request should include the relevant exchange/provider and account/acquisition context; yfinance is software and is not the data licensor.
+**Route:** Yahoo's [permissions request page](https://legal.yahoo.com/us/en/yahoo/permissions/requests/index.html). I have not added an unverified email address. The final request needs the exchange, provider, account, and acquisition context; yfinance is software, not the data licensor.
 
 > Subject: Permission request for historical Yahoo Finance futures data and derived research tables
 >
@@ -23,7 +23,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 2. FinCast-Paper-test authors / dataset publisher
 
-**Unsent draft. Route:** use the dataset host's official contact or discussion mechanism for the dataset publisher; no author email is verified in the local evidence, so none is invented here. Request a provider-by-provider rights schedule, not only a copy of the repository license label.
+**Route:** the dataset host's official contact or discussion channel. I found no verified author email, so I have not invented one. The request needs a provider-by-provider rights schedule, not another copy of the repository license label.
 
 > Subject: Request for source rights and market-data provenance for FinCast-Paper-test
 >
@@ -40,7 +40,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 3. FI-2010 authors and Nasdaq Helsinki rights holder
 
-**Unsent draft. Route:** contact the named FI-2010 authors through their verified institutional/publication contact routes and separately use Nasdaq's official European market-data licensing inquiry channel. No individual address or specific Nasdaq sales email is inferred here. The Fairdata CC BY record and exchange-origin question should both be addressed.
+**Route:** verified institutional or publication contacts for the FI-2010 authors, plus Nasdaq's official European market-data licensing channel. I have not inferred individual or sales addresses. The request must address both the Fairdata CC BY record and the exchange-origin rights.
 
 > Subject: FI-2010 redistribution and source-venue rights clarification
 >
@@ -57,7 +57,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 4. Coinbase market data / Kaggle third-party copy
 
-**Unsent draft. Verified official contact:** `marketdata@coinbase.com` is listed in Coinbase's [Market Data Terms of Use](https://www.coinbase.com/legal/market_data) for questions about those terms and market data (checked 2026-10-09). This is the only email address included here. The request concerns the Kaggle historical copy and does not assume the direct Coinbase terms necessarily bind a third-party recipient.
+**Verified contact:** `marketdata@coinbase.com`, listed in Coinbase's [Market Data Terms](https://www.coinbase.com/legal/market_data) on 2026-10-09. This request concerns the historical Kaggle copy and does not assume that direct Coinbase terms bind every third-party recipient.
 
 > To: marketdata@coinbase.com  
 > Subject: Rights clarification for historical Coinbase WebSocket order-book dataset obtained via Kaggle
@@ -75,7 +75,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 5. Qlib archive / unknown original provider
 
-**Unsent draft. Route:** no external recipient can be identified until the original vendor/provider is known. A Qlib-compatible binary layout is not evidence that Microsoft Qlib supplied or licensed this data. First request acquisition records from the local archive's custodian or inspect the original download, invoice, readme, and provider manifest; then direct a rights request to the named rights holder. Do not email Qlib as if it were the provider unless evidence supports that link.
+**Route:** none until I identify the original provider. A Qlib-compatible layout does not show that Microsoft supplied or licensed the data. First inspect the original download, invoice, README, or provider manifest; then contact the named rights holder.
 
 > Subject: Rights and provenance request for Chinese-equity feature archive
 >
@@ -92,7 +92,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 6. U.S. Treasury daily yields and FDIC Failed Bank List
 
-**Unsent drafts. Route:** use the official contact route on each agency's website and identify the precise data page/download. No agency email address has been verified in this preparation. Ask the two agencies separately; their products and rights questions are unrelated.
+**Route:** each agency's official contact form, with the exact download page named. I have not verified an agency email address. These are separate products and should be asked about separately.
 
 ### Treasury daily par-yield curve rates
 
@@ -122,7 +122,7 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## 7. Binance Vision commercial redistribution
 
-**Unsent draft. Route:** use the official Binance public-data repository's contact mechanism; no recipient email has been verified. The current CC BY-NC-SA 4.0 grant does not clear a commercially reusable combined release.
+**Route:** the official Binance public-data repository's contact channel. I have not verified a recipient email. The current CC BY-NC-SA 4.0 terms do not clear the material for a commercially reusable combined release.
 
 > Subject: Permission for commercial redistribution and ML use of Binance Vision historical data
 >
@@ -135,4 +135,4 @@ Request the scope relevant to any proposed external release: commercial and non-
 
 ## Follow-up record
 
-If an owner later authorizes sending a request, record the date, exact recipient/channel, exact version of the request, response, and any attachments or license terms in an audit evidence file. Update the source registry and affected file decisions; do not treat silence as permission. A written response should be reviewed for scope and authority before the release selection changes.
+If I send a request later, I will record the date, recipient, channel, exact wording, response, attachments, and license terms in the audit evidence. Silence is not permission. Any written answer needs a scope and authority review before I change the release selection.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Collect public, keyless repository metrics into a local append/upsert CSV."""
+"""Collect repository metrics into the local history CSV."""
 from __future__ import annotations
 
 import argparse

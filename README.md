@@ -1,23 +1,16 @@
 # Market Timeseries
 
-**Local release preparation, version 0.1.0-local. Not published.** This repository contains a small, documented selection of public-source and derived market and macro-financial tables prepared for research and reproducible analysis. It is not a mirror of every dataset found in the source workspace. The preparation manifest contains 54 data files (106,875,828 bytes, about 106.9 MB); original datasets were not moved or modified.
+I built this repository as a small, traceable selection of market and macro-financial data for research. It contains 54 prepared files (106,875,828 bytes, about 106.9 MB), drawn from public-agency sources and one documented crypto-market source. I left the original datasets unchanged.
 
-Private review hosting has subsequently been authorized: see [private repository and Drive dataset locations](docs/private_hosting.md). Public release and DOI registration remain pending.
+The project is at version `0.1.0-local`. I have stored review copies in a [private GitHub repository and restricted Google Drive folder](docs/private_hosting.md). I have not published the dataset or registered a DOI.
 
-Repository usage is documented in the [analytics summary](metrics/README.md), [traffic history](metrics/metrics_log.csv) and [analytics definitions/access notes](docs/github_analytics.md). GitHub currently disables Traffic Insights for this private repository's account plan; unavailable visitors are not reported as zero.
+Repository activity is recorded in the [analytics summary](metrics/README.md) and [CSV history](metrics/metrics_log.csv). GitHub does not expose Traffic Insights for this private repository on the current plan, so visitor fields are marked unavailable rather than zero.
 
-[![Downloads: not published](https://img.shields.io/badge/downloads-not%20published-lightgrey)](hosting/downloads_badge.json)
-[![Stars: not published](https://img.shields.io/badge/stars-not%20published-lightgrey)](docs/hosting_and_metrics.md)
+There is no public download or DOI yet.
 
-<!-- Replace this commented template only after an owner-selected repository URL exists:
-[![GitHub stars](https://img.shields.io/github/stars/OWNER/REPOSITORY?style=social)](https://github.com/OWNER/REPOSITORY)
--->
+## Prepared selection
 
-> This is a local preparation snapshot. There is no public repository, release, DOI, hosting identifier, or download endpoint yet. A `not published` badge is intentional.
-
-## Proposed public selection
-
-The table below describes the six prepared table products. “Conditional” means that the proposed selection is limited to the documented material and carries source-specific terms and notices; it is not a universal clearance of every source artifact. Review [the source-by-source terms](THIRD_PARTY_LICENSES.md) and [the machine-readable manifest](docs/release_manifest.json) before reuse.
+I prepared six table products. “Conditional” means I reviewed the named material under the stated source terms; it does not clear every file from that source. Read the [source-by-source terms](THIRD_PARTY_LICENSES.md) and [release manifest](docs/release_manifest.json) before reuse.
 
 | Dataset | Coverage and frequency | Rows | Approx. bytes | Units / interpretation | Rights and caveats |
 |---|---|---:|---:|---|---|
@@ -28,19 +21,19 @@ The table below describes the six prepared table products. “Conditional” mea
 | RBA F2 government bond yields (`data/timeseries/rba_f2.parquet`) | 2013-05-20 to 2025-12-31; daily observations on a weekly publication schedule | 3,196 | 125,336 | Yield percent; five Australian Government Security yield series | RBA Financial Data section 5 terms, not the general RBA CC BY grant. Credit RBA, avoid endorsement, and disclose if charging for access to material RBA publishes free. |
 | CFTC disaggregated futures-and-options positioning: source CSV plus lossless field-text Parquet companion (`data/timeseries/cftc_disaggregated_2018_2024.csv`, `data/timeseries/cftc_disaggregated_2018_2024.parquet`) | 2018-01-02 to 2024-12-31; weekly; 543 markets | 83,019 (same rows in each format) | 104,534,346 combined: CSV 88,333,114; Parquet 16,201,232 | Heterogeneous source `Contract_Units`; do not assume a common unit across markets. The Parquet companion stores all 191 fields as UTF-8 strings. | CFTC agency public-domain statement supports copying of agency-created information with acknowledgment; check artifact-level exceptions. The two format files are one dataset product, not separate observations. The inventory null scan verified the market-name and report-date columns only; other source CSV null counts are unverified. |
 
-Sizes are exact bytes from the local preparation statistics and are not rounded storage promises. In total, the six prepared table products account for 106,875,828 bytes across 54 files and 99,216 product rows (the CFTC CSV and Parquet files contain the same 83,019 rows and do not add a table). These are not 99,216 independent events or observations; rows may represent releases, revisions, or reports, and datasets have different sampling units. Summing field counts across unlike schemas—or counting the companion's fields twice—does not produce a meaningful dataset-wide column count.
+The sizes above are exact. Together the products use 106,875,828 bytes across 54 files and contain 99,216 rows after counting the CFTC CSV and Parquet companion once. That total mixes releases, revisions, reports, yields, and market bars. It is not a sample size, and summing columns across these unrelated schemas would not be meaningful.
 
-The source inventory identified 18 families. This selected set does not include every family: the [full family decision table](THIRD_PARTY_LICENSES.md) distinguishes proposed inclusion from held, denied, conditional, and unresolved sources. In particular, Binance's NC-SA material is excluded from the commercially reusable selection; FI-2010's CC BY label does not settle its exchange-data rights chain; and the Coinbase CC0 label conflicts with unresolved Coinbase market-data terms. Those are unresolved rights questions, not categorical legal findings about all possible uses.
+My inventory identified 18 source families, but only six prepared products are included here. The [family decision table](THIRD_PARTY_LICENSES.md) explains what I included, held back, or could not resolve. I excluded Binance's NC-SA material from the commercially reusable selection. I also held FI-2010 and Coinbase-derived material because their dataset labels do not settle the underlying market-data rights. These are unresolved rights questions, not legal conclusions about every possible use.
 
 ### Coverage and interpretation limits
 
-Availability is not the same as observation time. For timestamped macro events, use the provided availability/publication timestamp to avoid seeing information before it was public. The verified-time event set uses 2,465 rows with UTC timestamps and source evidence. The review set is deliberately separate: most of its rows do not have a verified release instant, and a source revision may require review. A date-only record remains a date; it must not be assigned an invented intraday time.
+Availability is not the same as observation time. For macro events, use the availability or publication timestamp so a backtest cannot see information before it was public. I kept 2,465 events with UTC timestamps and source evidence in the verified set. I kept date-only records and uncertain revisions in a separate review table. A date-only record must stay date-only.
 
-The time-series tables also have distinct reporting schedules. CFTC positioning is weekly and refers to report dates; RBA F2 values are daily observations published on a weekly schedule. A model or analysis must respect the actual release/availability fields rather than backfill a value into an earlier information set. CFTC disaggregated contracts have heterogeneous contract units. Hyperliquid rows are venue-native perpetual-market values and are not converted to fiat.
+CFTC positioning is weekly and refers to report dates. RBA F2 contains daily observations published on a weekly schedule. Respect the release and availability fields instead of backfilling values into an earlier information set. CFTC contract units vary by market, and the Hyperliquid values remain in venue-native units.
 
-The two event sources shown in the verified-time table are not a consensus calendar. Release selection and historic timestamp evidence vary by source, country and event. An empty scalar value means the field was not supplied or established in this dataset, not zero, unchanged, or “no surprise.” Dataset-specific null counts and quality flags are in [dataset statistics](docs/dataset_statistics.json) and [schemas](#schemas).
+The verified event table is not a consensus calendar. It covers selected ABS and Federal Reserve records, and the timestamp evidence varies by source and event. An empty scalar means I could not establish a value; it does not mean zero, unchanged, or “no surprise.” See the [dataset statistics](docs/dataset_statistics.json) and [schemas](#schemas-and-provenance) for null counts and quality flags.
 
-This is research data, not investment, trading, legal, accounting, or tax advice. It makes no recommendation and carries no promise of completeness, timeliness, fitness, or future availability. No financial recommendations or model performance claims are made.
+I prepared this for research, not as investment, trading, legal, accounting, or tax advice. I make no claim that it is complete, current, or suitable for a particular decision, and I report no model-performance results.
 
 ## Quick loading
 
@@ -49,44 +42,40 @@ Install Python with `pandas` and a Parquet engine such as `pyarrow`. CSV can be 
 ```python
 import pandas as pd
 
-# Partitioned event directory (Parquet files under year=.../country=...)
+# Partition columns come from the year=.../country=... directory layout.
 events = pd.read_parquet("data/events/economic_events")
 events["available_timestamp"] = pd.to_datetime(
     events["available_timestamp"], utc=True, errors="coerce"
 )
 
-# Keep the separate review set out of timestamp-sensitive evaluation.
+# This table contains records whose timing or revision status still needs review.
 review = pd.read_parquet("data/events/economic_events_review.parquet")
 timestamp_eligible = events.dropna(subset=["available_timestamp"])
 
-# Weekly CFTC TFF and daily-observation / weekly-publication RBA series.
 tff = pd.read_parquet("data/timeseries/cftc_tff.parquet")
 rba = pd.read_parquet("data/timeseries/rba_f2.parquet")
 rba["available_timestamp"] = pd.to_datetime(rba["available_timestamp"], utc=True)
 
-# CFTC source CSV: keep source fields as text to preserve literal NA, empty
-# fields, and leading zeroes. Do not let parser inference change field values.
+# Disable inference because literal NA, empty fields, and leading zeroes matter.
 cftc_csv = pd.read_csv(
     "data/timeseries/cftc_disaggregated_2018_2024.csv",
     dtype="string", keep_default_na=False, na_filter=False,
 )
 
-# Field-text Parquet companion: same 83,019 rows and 191 fields, with text
-# values preserved. Numeric/date conversion is deliberately left to the user.
+# The Parquet companion stores the same 83,019 rows and 191 fields as text.
 cftc_parquet = pd.read_parquet(
     "data/timeseries/cftc_disaggregated_2018_2024.parquet"
 )
 
-# Hourly venue-native perpetual OHLCVA.
 hourly = pd.read_parquet("data/markets/hyperliquid_hourly.parquet")
 hourly["timestamp"] = pd.to_datetime(hourly["timestamp"], utc=True)
 ```
 
-For time-aware joins, select the latest value whose **availability** timestamp is no later than the simulated decision time. Do not join only on calendar date if an event can occur after the decision time. Do not infer a missing observation as zero. Read the relevant schema and rights notes before combining or republishing tables.
+For time-aware joins, select the latest value whose **availability** timestamp is no later than the simulated decision time. A calendar-date join can leak an event that occurred later that day. Keep missing values as missing, and read the relevant schema and rights notes before combining or republishing tables.
 
 ## Schemas and provenance
 
-Schema files document the published field names, types and nullability. The two event products have separate schemas because their timing and review status differ.
+Each schema records field names, types, and nullability. The event products have separate schemas because their timing evidence and review status differ.
 
 - [Economic events schema](docs/schema_economic_events.json)
 - [Economic events review schema](docs/schema_economic_events_review.json)
@@ -100,25 +89,21 @@ Hashes, source dependencies, per-file byte sizes, descriptions and conditions ar
 
 ## Citation
 
-For this local prepared collection, cite:
+Please cite this preparation as:
 
 > Mallick, Prakash (curator). *Market Timeseries: Local Release Preparation*. Version 0.1.0-local, 2026. Local preparation snapshot; not published. Cite the originating provider and applicable license for each table as described in `THIRD_PARTY_LICENSES.md`.
 
-Use [`CITATION.cff`](CITATION.cff) or [`docs/citation.bib`](docs/citation.bib) for machine-readable metadata. No DOI, affiliation, public repository URL, or source ownership is claimed. Dataset-source attributions are required independently of this curator citation.
+[`CITATION.cff`](CITATION.cff) and [`docs/citation.bib`](docs/citation.bib) contain the same metadata. I do not claim a DOI, affiliation, public repository, or ownership of the source data. Source attribution still applies separately.
 
 ## Licensing
 
-[`LICENSE`](LICENSE) is the MIT License for original project code, curation, and documentation only. It does not relicense upstream data. Upstream terms and attribution requirements remain attached to the corresponding rows and derived material; see [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md). In brief:
+[`LICENSE`](LICENSE) applies MIT to the code, curation, and documentation I wrote. It does not relicense upstream data. The original terms and attribution requirements remain attached to each source; see [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).
 
-- **MIT** is short and permissive for project-authored code/docs, but supplies no express patent grant and cannot solve data rights.
-- **Apache-2.0** is also permissive and adds express patent language and NOTICE handling, at the cost of more conditions and text. It still cannot authorize data rights the licensor does not control.
-- **GPL-3.0** requires covered derivative software to remain under GPL and includes stronger copyleft/patent provisions; it is a poor fit for a small curation package that needs to preserve varied upstream data terms.
-
-These comparisons concern original project material only. They do not decide whether an upstream provider permits redistribution, commercial use, derived datasets, or machine-learning use.
+I chose MIT because it is short and suitable for this small code and documentation package. Apache-2.0 would add patent and NOTICE provisions; GPL-3.0 would add copyleft requirements. None of these licenses can grant rights in data I do not own.
 
 ## Status and planned layout
 
-This work was prepared locally on 2026-10-09. It remains unpublished to the public and has no DOI. The owner subsequently authorized the private repository push and Drive copies described in [private_hosting.md](docs/private_hosting.md). A 32,653-file local restricted copy is under `data_restricted/`, totaling 237,154,298,717 logical bytes. These are independent APFS copy-on-write clones, not hardlinks; their initial physical allocation was metadata-only, so the logical-byte total does not mean an additional 237 GB of content blocks. Restricted holdings are not part of this proposed public table selection. No original source holdings were modified.
+I prepared this snapshot on 2026-10-09 and later copied it to the private locations listed in [private_hosting.md](docs/private_hosting.md). It is still unpublished and has no DOI. The local `data_restricted/` tree contains 32,653 APFS copy-on-write files totaling 237,154,298,717 logical bytes. They are independent clones rather than hardlinks, and the logical total does not mean another 237 GB was physically duplicated. These restricted files are outside the prepared selection. I did not modify the source holdings.
 
 ```text
 data/       selected, manifest-listed table products only
@@ -130,8 +115,8 @@ scripts/    local preparation and validation utilities
 tests/      local checks
 ```
 
-For planned work and release gates, see [`docs/TODO_for_owner.md`](docs/TODO_for_owner.md). Contributions and corrections should follow [`CONTRIBUTING.md`](CONTRIBUTING.md). Data redistribution or publication must wait until source terms and all owner release gates are satisfied.
+See [`docs/TODO_for_owner.md`](docs/TODO_for_owner.md) for remaining release decisions and [`CONTRIBUTING.md`](CONTRIBUTING.md) for corrections. I will not publish or redistribute the data until the source terms and release gates are resolved.
 
 ## Funding, affiliation, and acknowledgements
 
-No funding, institutional affiliation, endorsement, or organizational sponsorship is claimed. Add these only if verified and supplied by the curator. Third-party dataset creators are credited in the source-specific notices.
+I received no declared funding or institutional sponsorship for this preparation, and I claim no organizational endorsement. Third-party creators are credited in the source-specific notices.

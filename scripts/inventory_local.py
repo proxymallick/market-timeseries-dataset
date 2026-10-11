@@ -1,4 +1,4 @@
-"""Read-only discovery metadata; never transforms or copies source data."""
+"""Inventory local files without copying or transforming them."""
 import csv, json, os, re, hashlib
 from pathlib import Path
 from collections import defaultdict
@@ -22,7 +22,7 @@ for root in roots:
             p=Path(d,name)
             if name.startswith('.env') or re.search(r'credential|secret|private.?key|token',name,re.I): continue
             if p.suffix.lower() not in EXT: continue
-            # Personal documents are outside the dataset scope; inspect names only.
+            # Names are enough to exclude personal documents without opening them.
             relevant = (WORK in p.parents or HOME/'.qlib' in p.parents or 'ML model futures contracts' in p.parts or name in {'ADA_1min.csv','ADA_1min.csv.zip'})
             if relevant: candidates.append(p)
             else: exclusions.append(str(p))
@@ -47,7 +47,7 @@ rows=[]
 for p in candidates:
     if 'ML model futures contracts' in p.parts: continue # independently inventoried
     if p.relative_to(WORK).parts[0] in {'output','runs','tmp','submission_full_verified','reports'} if WORK in p.parents else False: continue
-    # JSON configuration is not an observation table; retained in candidate list.
+    # Keep configuration visible in the audit without treating it as data.
     if p.suffix=='.json' and 'data' not in p.parts: continue
     if p.suffix=='.txt' and HOME/'.qlib' not in p.parents and 'data' not in p.parts: continue
     r={k:'UNKNOWN' for k in FIELDS}

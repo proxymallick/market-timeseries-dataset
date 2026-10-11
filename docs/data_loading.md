@@ -1,16 +1,16 @@
 # Loading the prepared tables
 
-This guide describes the **local, unpublished** preparation snapshot. Files and row counts are recorded in [`release_manifest.json`](release_manifest.json); all table schemas are linked from the [README](../README.md#schemas). The examples use pandas and PyArrow and assume the repository root is the current working directory.
+These examples load the private preparation with pandas and PyArrow. Run them from the repository root. The [release manifest](release_manifest.json) records files and row counts, and the [README](../README.md#schemas-and-provenance) links every schema.
 
 ```bash
 python -m pip install pandas pyarrow
 ```
 
-Do not copy the MIT code license onto the data. Before reusing or redistributing a product, read [`../THIRD_PARTY_LICENSES.md`](../THIRD_PARTY_LICENSES.md), source notices, and upstream terms.
+MIT covers my code and documentation, not the source data. Read [`../THIRD_PARTY_LICENSES.md`](../THIRD_PARTY_LICENSES.md) and the upstream notices before reuse or redistribution.
 
 ## Partitioned verified-time event directory
 
-The main event set is Parquet files partitioned under `data/events/economic_events/year=.../country=.../`. `pandas.read_parquet` with a dataset-capable engine reads the directory and normally materializes `year` and `country` partition values as columns when available from the dataset layout. Field presence may vary if reading a single partition file directly.
+The verified event set is partitioned under `data/events/economic_events/year=.../country=.../`. A dataset-capable Parquet engine reads the full directory and usually materializes `year` and `country` from the path. A single partition file may not contain those fields directly.
 
 ```python
 import pandas as pd
@@ -20,16 +20,16 @@ for field in ("event_timestamp_utc", "available_timestamp", "ingested_at_utc"):
     if field in events:
         events[field] = pd.to_datetime(events[field], utc=True, errors="coerce")
 
-# Inspect the time evidence and quality fields before choosing rows.
+# These fields explain why a timestamp is usable.
 print(events[["event_name", "event_timestamp_utc", "available_timestamp",
               "timestamp_evidence", "confidence", "quality_status"]].head())
 ```
 
-`available_timestamp` is the conservative point-in-time field for historical simulation. It represents when the information was available to a consumer, where established. Do not treat event date or a value's reference period as the publication instant. `timestamp_evidence`, `confidence`, and `quality_status` help identify how the timestamp was established. If a value is null, do not replace it with zero.
+Use `available_timestamp` for point-in-time work. It records when the information became available, where I could establish that time. An event date or reference period is not a publication instant. The evidence, confidence, and quality fields explain each timestamp. Keep null values as null.
 
 ## Separate review-only event table
 
-`data/events/economic_events_review.parquet` is intentionally separate from verified-time data. The measured statistics report 4,129 of 4,219 rows with unknown release time and 90 rows requiring source-revision review. Load it for provenance inspection and manual review, not as timestamp-eligible model input by default.
+I keep `data/events/economic_events_review.parquet` separate because 4,129 of its 4,219 rows have unknown release times and 90 need source-revision review. Use it for provenance checks and manual review, not as timestamp-eligible model input.
 
 ```python
 review = pd.read_parquet("data/events/economic_events_review.parquet")
@@ -46,11 +46,11 @@ needs_revision_review = review[
 ]
 ```
 
-Only 90 review rows have a typed event/availability timestamp in the measured summary. That fact does not promote the other 4,129 rows; use row-level quality and evidence fields. A publication **date** is not an intraday timestamp. The review table includes AOFM, USDA, Federal Reserve, RBA, and ABS records; there is no FDIC source in this release table.
+Only 90 review rows have typed event and availability timestamps. The other 4,129 remain unknown-time records. A publication **date** is not an intraday timestamp. The table contains AOFM, USDA, Federal Reserve, RBA, and ABS records; it contains no FDIC data.
 
 ## Weekly CFTC reports
 
-The prepared Parquet TFF table is a four-instrument subset of Treasury futures weekly reports. The disaggregated futures-and-options table covers 543 markets and is available as the source CSV plus a Parquet companion. Both contain the same 83,019 rows and 191 fields; the companion is a second representation, not another table or added observations. `Contract_Units` is not homogeneous across the disaggregated markets.
+The TFF Parquet file contains four Treasury-futures instruments. The disaggregated table covers 543 markets and comes as a source CSV plus a Parquet companion. Both formats contain the same 83,019 rows and 191 fields. `Contract_Units` varies by market.
 
 ```python
 tff = pd.read_parquet("data/timeseries/cftc_tff.parquet")
@@ -61,8 +61,7 @@ tff["available_timestamp"] = pd.to_datetime(
     tff["available_timestamp"], utc=True, errors="coerce"
 )
 
-# Source CSV: preserve every field as text, including literal "NA", empty
-# fields, and leading zeroes. Disable pandas' default NA/type inference.
+# Disable inference because literal NA, empty fields, and leading zeroes matter.
 disaggregated_csv = pd.read_csv(
     "data/timeseries/cftc_disaggregated_2018_2024.csv",
     dtype="string",
@@ -70,19 +69,19 @@ disaggregated_csv = pd.read_csv(
     na_filter=False,
 )
 
-# Lossless field-text Parquet companion: all columns are UTF-8 strings.
+# The companion stores every column as UTF-8 text.
 disaggregated_parquet = pd.read_parquet(
     "data/timeseries/cftc_disaggregated_2018_2024.parquet"
 )
 ```
 
-The source CSV remains unchanged. The Parquet companion was created by parsing all CSV fields as UTF-8 text: literal `NA`, empty strings, leading zeroes, and source text spellings are preserved; no number/date inference or field-value conversion was performed. Its schema is [`schema_cftc_disaggregated_parquet.json`](schema_cftc_disaggregated_parquet.json); the CSV schema is [`schema_cftc_disaggregated.json`](schema_cftc_disaggregated.json). Any numeric or date conversion is a downstream user choice. Convert only after checking meaning, units, and missing-value spellings, and preserve the original text field. For example, an explicit conversion of a verified numeric field could be `pd.to_numeric(disaggregated_csv["Open_Interest_All"], errors="raise")`; this raises if source spellings are not numeric instead of silently coercing them.
+I left the CSV unchanged and wrote every Parquet field as UTF-8 text. Literal `NA`, empty strings, leading zeroes, and source spellings are preserved. The [Parquet schema](schema_cftc_disaggregated_parquet.json) and [CSV schema](schema_cftc_disaggregated.json) document the formats. Convert a field only after checking its units and missing-value spellings. For example, `pd.to_numeric(disaggregated_csv["Open_Interest_All"], errors="raise")` fails on non-numeric source text instead of silently coercing it.
 
-Retain source report dates and do not assume that a Tuesday report date alone records when a user could first have known its values. For TFF use `available_timestamp` when populated. The inventory's CFTC disaggregated null scan covered only the market-name and report-date fields; other source CSV null counts remain unverified. Consult the source CFTC schema and terms before interpreting columns or combining markets.
+A Tuesday report date does not prove when the values became public. Use `available_timestamp` for TFF where present. The disaggregated null scan covered only market name and report date; null counts for other fields remain unverified.
 
 ## RBA F2 yields
 
-The F2 table stores daily observed Australian Government Security yields in percent, with both observation and availability timestamps. Its official publication schedule is weekly, and it can contain missing yield fields. Preserve the distinction between the value's observation date and when the table became available.
+The F2 table stores daily Australian Government Security yields in percent and records both observation and availability times. The RBA publishes it weekly, so keep those times distinct.
 
 ```python
 rba = pd.read_parquet("data/timeseries/rba_f2.parquet")
@@ -96,11 +95,11 @@ yield_columns = [c for c in rba if c.endswith("_yield_pct")]
 print(rba[yield_columns].isna().sum())
 ```
 
-Do not fill missing yields without a documented rule and a separate derived output. The F2 series has separate RBA Financial Data conditions; see [`../THIRD_PARTY_LICENSES.md`](../THIRD_PARTY_LICENSES.md#family-decisions).
+Do not fill missing yields in place. Document any imputation in a separate derivative. RBA Financial Data has its own conditions in [`../THIRD_PARTY_LICENSES.md`](../THIRD_PARTY_LICENSES.md#family-decisions).
 
 ## Hyperliquid hourly bars
 
-The Hyperliquid table has hourly BTC, ETH, and SOL perpetual-market bars for the prepared period. Prices, volume, and amount are venue-native. The aggregation's `amount` is sum(price × size); no fiat conversion is made.
+The Hyperliquid table contains hourly BTC, ETH, and SOL perpetual bars. Prices, volume, and amount stay in venue-native units; `amount` is the sum of price times size, not a fiat conversion.
 
 ```python
 bars = pd.read_parquet("data/markets/hyperliquid_hourly.parquet")
@@ -108,11 +107,11 @@ bars["timestamp"] = pd.to_datetime(bars["timestamp"], utc=True)
 bars = bars.sort_values(["item_id", "timestamp"])
 ```
 
-The table has no nulls in the nine measured fields. A single month of hourly observations is not a complete historical or current-market representation. The source Open Book data carries a CC BY 4.0 attribution requirement; this aggregation should be cited as a modified hourly derivative. The raw account/order data are not included here.
+The nine measured fields contain no nulls. One month of hourly bars is not a complete market history. Cite the CC BY 4.0 Open Book source and identify this as a modified hourly derivative. Raw account and order data are not included.
 
 ## Availability-aware joins
 
-For an as-of join, sort both the decision observations and provider data by their timestamps. Use each provider's availability field, not the event's reference period, observation date, or eventual revised value. The simple pattern below demonstrates the direction of a join; it does not certify a complete point-in-time backtest.
+For an as-of join, sort both sides by time and join on the provider's availability field. Do not use a reference period, observation date, or eventual revised value as a substitute. This example shows the join direction; it does not make a backtest point-in-time complete.
 
 ```python
 decisions = decisions.copy()
@@ -131,4 +130,4 @@ joined = pd.merge_asof(
 )
 ```
 
-For announcement events, a backward as-of join may need a keyed event/series design rather than a global join, and revisions need a policy for selecting vintages. Verify that all source timestamps represent the same information concept and that your code handles date-only rows, revisions, timezone normalization, and publication lags. A timestamp field does not guarantee a comprehensive historical vintage archive.
+Announcements usually need a keyed event or series join rather than one global match, and revisions need an explicit vintage policy. Check that timestamps describe the same information concept and handle date-only rows, timezone normalization, and publication lags. A timestamp column does not imply a complete vintage archive.

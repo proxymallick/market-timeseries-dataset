@@ -1,7 +1,4 @@
-"""Rebuild the proposed public payload from hash-pinned, lawfully held local inputs.
-
-No provider downloads, credentials, publishing or changes to source files.
-"""
+"""Rebuild the release from hash-pinned local inputs without overwriting them."""
 import argparse,json,hashlib
 from pathlib import Path
 import pyarrow as pa

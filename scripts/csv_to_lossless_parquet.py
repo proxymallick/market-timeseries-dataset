@@ -1,4 +1,4 @@
-"""CSV field-text preservation, without inferred numeric/date/null coercion."""
+"""Copy CSV fields to Parquet without type or null inference."""
 import argparse,csv
 from pathlib import Path
 import pyarrow as pa

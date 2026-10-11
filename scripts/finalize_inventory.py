@@ -68,7 +68,7 @@ for r in rows:
     groups=['economic_events','futures_daily','fincast','binance','hyperliquid','coinbase','fi2010','cftc','treasury','rba_f2','wasde']
     r.setdefault('overlap_group',next((t for t in groups if t in s),'UNVERIFIED'))
     r['duplicate_group']='UNVERIFIED';r['metadata_status']='Partial metadata; UNKNOWN fields require verification; licenses UNVERIFIED'
-    # Small-file exact duplicates only. Large files remain unverified, never hash entire large archives.
+    # Large archives are excluded so this pass stays bounded.
     if p.is_file() and int(r['size_bytes'])<=2_000_000 and r['dataset_role'] not in {'analysis_or_model_artifact','packaged_copy_or_analysis'}:
         digest=hashlib.sha256(p.read_bytes()).hexdigest();hashes[digest].append(r)
     unique.append(r)

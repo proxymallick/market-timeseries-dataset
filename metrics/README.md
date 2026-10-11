@@ -1,7 +1,6 @@
 # Repository analytics
 
-Repository: [proxymallick/market-timeseries-dataset](https://github.com/proxymallick/market-timeseries-dataset)
-Latest collection attempt: 2026-10-11T02:45:34.577324Z
+I collect aggregate activity for [proxymallick/market-timeseries-dataset](https://github.com/proxymallick/market-timeseries-dataset). The latest attempt was `2026-10-11T02:45:34.577324Z`.
 
 | Metric | Latest result |
 |---|---:|
@@ -15,6 +14,6 @@ Latest collection attempt: 2026-10-11T02:45:34.577324Z
 
 [Live GitHub Traffic Insights](https://github.com/proxymallick/market-timeseries-dataset/graphs/traffic) · [CSV history](metrics_log.csv) · [Definitions and access limits](../docs/github_analytics.md)
 
-GitHub reports unique visitors for the selected 14-day window; this is not an all-time count of people. Daily uniques and overlapping windows must not be summed. Views can include repeat visits; clones exclude fetches. Missing or inaccessible measurements remain unavailable.
+GitHub deduplicates visitors within its 14-day window. That is not an all-time people count, and daily uniques or overlapping windows cannot be added together. Views include repeats; clones exclude fetches. Missing counters stay unavailable.
 
-Current private-repository Traffic Insights is disabled by the account plan. A supported private-repository plan and repository-authorized API access are needed for traffic collection. See the access notes before enabling a token. Counts have no visitor identities, IP addresses, cookies or tracking pixels.
+The current account plan disables Traffic Insights for this private repository. Traffic collection needs both a supported plan and repository-authorized API access. I store no visitor identities, IP addresses, cookies, or tracking pixels.

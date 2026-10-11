@@ -1,8 +1,8 @@
 # Third-party data, terms, and attribution
 
-**Evidence checked:** 2026-10-09 UTC. This is a technical source-rights audit, not legal advice. Source terms can change, may depend on the acquisition date or account relationship, and may not settle third-party rights. A source's presence in the local inventory is not permission to redistribute it. “Conditional” means only the stated narrow material and conditions have been considered; it is not blanket clearance.
+I checked the evidence below on 2026-10-09 UTC. This is a technical source-rights audit, not legal advice. Terms can change, depend on acquisition dates or account relationships, and leave third-party rights unresolved. Finding a source in my local inventory does not give me permission to redistribute it. “Conditional” applies only to the material and conditions stated here.
 
-The machine-readable source register and detailed evidence are [`docs/source_license_registry.json`](docs/source_license_registry.json) and [`docs/license_audit.md`](docs/license_audit.md). There are 18 family classifications below. The proposed six-table selection is separately enumerated in [`docs/release_manifest.json`](docs/release_manifest.json). “Included” refers only to the prepared table product named; raw source archives and other derivatives can remain held.
+The [source register](docs/source_license_registry.json) and [detailed audit](docs/license_audit.md) contain the evidence behind these 18 family decisions. The [release manifest](docs/release_manifest.json) lists the six prepared products separately. “Included” means only the named prepared product; I may still hold back raw archives and other derivatives from the same family.
 
 ## Family decisions
 
@@ -29,4 +29,4 @@ The machine-readable source register and detailed evidence are [`docs/source_lic
 
 ## MIT for project-authored material
 
-The root [`LICENSE`](LICENSE) uses MIT for original project code, curation, and documentation. MIT is simple and permissive but does not provide Apache-2.0's express patent grant. Apache-2.0 adds patent language and NOTICE obligations, but neither it nor MIT can convey upstream data rights a project author does not hold. GPL-3.0 has stronger reciprocal software and patent terms, but is not a mechanism for overriding dataset-specific upstream conditions. None of these choices changes the source-family decisions above.
+I use MIT for the code, curation, and documentation I wrote. It is short and permissive, though it lacks Apache-2.0's express patent grant. Apache-2.0 adds patent and NOTICE terms, while GPL-3.0 adds reciprocal software obligations. None of these licenses can grant upstream data rights I do not hold, and none changes the family decisions above.

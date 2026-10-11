@@ -1,4 +1,4 @@
-"""Conservative rules used by the local release builder."""
+"""Decide which local sources can enter the release."""
 def classify_dependencies(classifications):
     values=set(classifications)
     if 'restricted' in values:

@@ -1,6 +1,6 @@
 # Dataset paper build
 
-`main.tex` is intentionally self-contained so it can be opened and compiled by the built-in Codex LaTeX editor without extra project files. Its bibliography is embedded with `thebibliography`; `references.bib` is a parallel canonical BibTeX record set for archival and for later venue-template migration. Keep the citation keys and records aligned when editing either file.
+I keep `main.tex` self-contained so it compiles without extra project files. The paper embeds its bibliography with `thebibliography`; `references.bib` is the parallel BibTeX record for archival use and a possible venue template. Keep their citation keys aligned.
 
 For a local TeX installation with PGFPlots available:
 
@@ -9,8 +9,8 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
-The second pass resolves references. No BibTeX/Biber pass is required for this self-contained source. The row-count chart is drawn inline using PGFPlots, so no chart image or generated file is needed. The source states that the preparation is local and unpublished; do not add a DOI, repository link, release claim, or author affiliation until the owner confirms it.
+The second pass resolves references. The build does not need BibTeX or Biber, and PGFPlots draws the row-count figure inline. Do not add a DOI, public download, release claim, or affiliation until it has been verified.
 
-The delivered five-page `main.pdf` was compiled with Tectonic (`tectonic --keep-logs main.tex`) and all pages were rendered for visual inspection. The build has no LaTeX errors or overfull boxes; remaining underfull-box notices concern table spacing. An initial built-in editor compile timed out while fetching TeX dependencies; the exported PDF was verified separately.
+The current PDF is built with Tectonic (`tectonic --keep-logs main.tex`) and rendered page by page for inspection. Treat LaTeX errors, unresolved references, overfull boxes, clipping, and unreadable tables as build failures. Minor underfull table-spacing notices are acceptable after visual review.
 
-The measured statistics cited in the paper come from `../docs/dataset_statistics.json`, `../docs/inventory_summary.json`, `../docs/local_preparation_summary.json`, `../docs/transformation_log.json`, the corresponding schema JSON files, and the license audit/registry as of 9 October 2026. The current preparation manifest contains 54 files totaling 106,875,828 bytes. It includes both the 88 MB CFTC disaggregated CSV and its 16,201,232-byte lossless field-text Parquet companion; these are two representations of the same 83,019 records, counted once among the six table products. Regenerate the manifest and statistics before updating any counts or availability statements.
+The paper's measured figures come from `../docs/dataset_statistics.json`, `../docs/inventory_summary.json`, `../docs/local_preparation_summary.json`, `../docs/transformation_log.json`, the schemas, and the rights audit as of 9 October 2026. The manifest contains 54 files totaling 106,875,828 bytes. The 88 MB CFTC CSV and 16,201,232-byte text-preserving Parquet file contain the same 83,019 rows and count once. Regenerate the manifest and statistics before changing any count or availability statement.

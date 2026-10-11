@@ -7,3 +7,11 @@ collected_at_utc,host,resource_id,metric,value,window_start,window_end,status
 2026-10-09T13:37:32.342141Z,github,proxymallick/market-timeseries-dataset,stars,0,2026-10-09,2026-10-09,ok
 2026-10-09T13:37:32.342141Z,github,proxymallick/market-timeseries-dataset,forks,0,2026-10-09,2026-10-09,ok
 2026-10-09T13:37:32.342141Z,github,proxymallick/market-timeseries-dataset,watchers,0,2026-10-09,2026-10-09,ok
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,stars,0,2026-10-11,2026-10-11,ok
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,forks,0,2026-10-11,2026-10-11,ok
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,watchers,0,2026-10-11,2026-10-11,ok
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,views_14d,,2026-09-28,2026-10-11,unavailable
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,unique_visitors_14d,,2026-09-28,2026-10-11,unavailable
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,clones_14d,,2026-09-28,2026-10-11,unavailable
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,unique_cloners_14d,,2026-09-28,2026-10-11,unavailable
+2026-10-11T02:45:34.577324Z,github,proxymallick/market-timeseries-dataset,collection_status,,2026-10-11,2026-10-11,unavailable

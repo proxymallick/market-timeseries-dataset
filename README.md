@@ -2,7 +2,13 @@
 
 I built this repository as a small, traceable selection of market and macro-financial data for research. It contains 54 prepared files (106,875,828 bytes, about 106.9 MB), drawn from public-agency sources and one documented crypto-market source. I left the original datasets unchanged.
 
-The project is at version `0.1.0-local`. I have stored review copies in a [private GitHub repository and restricted Google Drive folder](docs/private_hosting.md). I have not published the dataset or registered a DOI.
+The project is at version `0.1.0-local`. I have stored the prepared review package in a [private GitHub repository and restricted Google Drive folder](docs/private_hosting.md). I have not published the dataset or registered a DOI.
+
+## Where the files are stored
+
+The Google Drive folder contains ten prepared release files: six compressed dataset packages, the documentation archive, the paper, the index, and a short README. Together they use about 31 MB after compression. It does **not** contain the roughly 221–237 GB source collection. I keep those larger source files locally because most are held back pending source-specific rights review, and they are too large for this Git repository.
+
+The repository itself contains the 106.9 MB prepared selection described below. The [private-hosting record](docs/private_hosting.md) lists the Drive folder, its contents, and the verification I performed after upload.
 
 Repository activity is recorded in the [analytics summary](metrics/README.md) and [CSV history](metrics/metrics_log.csv). GitHub does not expose Traffic Insights for this private repository on the current plan, so visitor fields are marked unavailable rather than zero.
 

@@ -6,9 +6,9 @@ The project is at version `0.1.0-local`. I have stored the prepared review packa
 
 ## Where the files are stored
 
-The Google Drive folder contains ten prepared release files: six compressed dataset packages, the documentation archive, the paper, the index, and a short README. Together they use about 31 MB after compression. It does **not** contain the roughly 221–237 GB source collection. I keep those larger source files locally because most are held back pending source-specific rights review, and they are too large for this Git repository.
+The restricted Google Drive folder contains the ten-file prepared review package (about 31 MB compressed). On 2026-10-17 I also started uploading the complete private source backup as `data_restricted/`: 32,654 files totaling 237,170,229,566 bytes (237.17 GB, or 220.88 GiB). The larger folder is a preservation copy, not part of the reviewed release candidate or a public download. Most of its contents remain held back pending source-specific rights review.
 
-The repository itself contains the 106.9 MB prepared selection described below. The [private-hosting record](docs/private_hosting.md) lists the Drive folder, its contents, and the verification I performed after upload.
+The repository itself contains the 106.9 MB prepared selection described below. The [private-hosting record](docs/private_hosting.md) lists the Drive destination, current upload status, contents, and verification notes.
 
 Repository activity is recorded in the [analytics summary](metrics/README.md) and [CSV history](metrics/metrics_log.csv). GitHub does not expose Traffic Insights for this private repository on the current plan, so visitor fields are marked unavailable rather than zero.
 

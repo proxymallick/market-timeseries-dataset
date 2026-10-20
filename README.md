@@ -6,7 +6,7 @@ The project is at version `0.1.0-local`. I have stored the prepared review packa
 
 ## Where the files are stored
 
-The restricted Google Drive folder contains the ten-file prepared review package (about 31 MB compressed). On 2026-10-17 I also started uploading the complete private source backup as `data_restricted/`: 32,654 files totaling 237,170,229,566 bytes (237.17 GB, or 220.88 GiB). The larger folder is a preservation copy, not part of the reviewed release candidate or a public download. Most of its contents remain held back pending source-specific rights review.
+The restricted Google Drive folder contains the ten-file prepared review package (about 31 MB compressed) and a completed private backup of `data_restricted/`. The backup contains 32,654 files totaling 237,170,229,566 bytes (237.17 GB, or 220.88 GiB). Drive reported the upload complete on 2026-10-20 after retrying failed transfers. The larger folder is a preservation copy, not part of the reviewed release candidate or a public download. Most of its contents remain held back pending source-specific rights review.
 
 The repository itself contains the 106.9 MB prepared selection described below. The [private-hosting record](docs/private_hosting.md) lists the Drive destination, current upload status, contents, and verification notes.
 
@@ -175,7 +175,7 @@ I chose MIT because it is short and suitable for this small code and documentati
 
 ## Status and planned layout
 
-I prepared this snapshot on 2026-10-09 and later copied it to the private locations listed in [private_hosting.md](docs/private_hosting.md). It is still unpublished and has no DOI. The local `data_restricted/` tree contains 32,653 APFS copy-on-write files totaling 237,154,298,717 logical bytes. They are independent clones rather than hardlinks, and the logical total does not mean another 237 GB was physically duplicated. These restricted files are outside the prepared selection. I did not modify the source holdings.
+I prepared this snapshot on 2026-10-09 and later copied it to the private locations listed in [private_hosting.md](docs/private_hosting.md). It is still unpublished and has no DOI. The private source backup contains 32,654 files totaling 237,170,229,566 bytes (237.17 GB, or 220.88 GiB). These restricted files are outside the 106.9 MB prepared selection. I did not modify the source holdings.
 
 ```text
 data/       selected, manifest-listed table products only

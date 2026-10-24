@@ -8,6 +8,8 @@ The project is at version `0.1.0-local`. I have stored the prepared review packa
 
 The restricted Google Drive folder contains the ten-file prepared review package (about 31 MB compressed) and a completed private backup of `data_restricted/`. The backup contains 32,654 files totaling 237,170,229,566 bytes (237.17 GB, or 220.88 GiB). Drive reported the upload complete on 2026-10-20 after retrying failed transfers. The larger folder is a preservation copy, not part of the reviewed release candidate or a public download. Most of its contents remain held back pending source-specific rights review.
 
+After verifying the completed Drive upload, I removed the redundant local `data_restricted/` copy on 2026-10-24. The deletion receipt is in [`hosting/data_restricted_cleanup_receipt_2026-10-24.json`](hosting/data_restricted_cleanup_receipt_2026-10-24.json). The working source datasets and the 106.9 MB prepared selection remain local.
+
 The repository itself contains the 106.9 MB prepared selection described below. The [private-hosting record](docs/private_hosting.md) lists the Drive destination, current upload status, contents, and verification notes.
 
 Repository activity is recorded in the [analytics summary](metrics/README.md) and [CSV history](metrics/metrics_log.csv). GitHub does not expose Traffic Insights for this private repository on the current plan, so visitor fields are marked unavailable rather than zero.

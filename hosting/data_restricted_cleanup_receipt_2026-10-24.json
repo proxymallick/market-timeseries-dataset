@@ -1,0 +1,16 @@
+{
+  "cleanup_date": "2026-10-24",
+  "deleted_local_path": "data_restricted/",
+  "files": 32654,
+  "bytes": 237170229566,
+  "decimal_gb": 237.17,
+  "gib": 220.88,
+  "restricted_manifest_sha256": "4b3269c13416e80aa12511ead3d747d000d3f6ae024744f96350a6c8be0719db",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1hK1fNAr8fH_LyNXnXjuVHhQqMOBDm8vq",
+  "drive_upload_evidence": {
+    "status": "1 upload complete",
+    "items": "36684 of 36684",
+    "progress_percent": 100
+  },
+  "scope_note": "Only the confirmed Google Drive-backed data_restricted copy was deleted. Superseded outputs, temporary submission copy, virtual environments, and installers were retained because they were not present in this Drive backup."
+}
